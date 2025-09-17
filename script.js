@@ -35,4 +35,20 @@ document.addEventListener('DOMContentLoaded', () => {
       heroSlides[currentHeroIndex].classList.add('active');
     }, 8000); // change slide every 8 seconds
   }
+
+  // Attempt to play looping background audio at a moderate volume
+  const bgAudio = document.getElementById('background-audio');
+  if (bgAudio) {
+    try {
+      bgAudio.volume = 0.5;
+      const playPromise = bgAudio.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(() => {
+          // Autoplay might be blocked by the browser; user interaction will trigger it later.
+        });
+      }
+    } catch (e) {
+      console.warn('Background audio could not play automatically', e);
+    }
+  }
 });
