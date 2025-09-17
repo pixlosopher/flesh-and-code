@@ -90,6 +90,16 @@ body {
   background: linear-gradient(45deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 100%);
   z-index: 0;
 }
+.hero video,
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
 .hero-content {
   position: relative;
   z-index: 1;
@@ -110,6 +120,15 @@ body {
 .subtitle {
   font-size: 1.2rem;
   color: #dcdcdc;
+  margin-bottom: 2rem;
+}
+
+/* Tagline styling for hero section */
+.tagline {
+  font-size: 1rem;
+  color: #d0d0d0;
+  font-style: italic;
+  margin-top: -0.5rem;
   margin-bottom: 2rem;
 }
 .hero-buttons {
