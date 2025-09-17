@@ -36,6 +36,27 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 10000); // change slide every 10 seconds for smoother transitions
   }
 
+      // Preload all hero videos and ensure they loop seamlessly
+      const heroVideos = document.querySelectorAll('.hero-slide video');
+      heroVideos.forEach((video) => {
+        // Explicitly set loop property to true (redundant with attribute but ensures behaviour)
+        video.loop = true;
+        // Ensure the video is loaded ahead of time
+        video.preload = 'auto';
+        // Kick off loading and handle any errors
+        const promise = video.play();
+        if (promise !== undefined) {
+          promise.catch(() => {
+            // ignore autoplay failures; will be started by user interaction or slider activation
+          });
+        }
+        // Restart video on end if loop fails for any reason
+        video.addEventListener('ended', () => {
+          video.currentTime = 0;
+          video.play();
+        });
+      });
+
   // Attempt to play looping background audio at a moderate volume
   const bgAudio = document.getElementById('background-audio');
   if (bgAudio) {
