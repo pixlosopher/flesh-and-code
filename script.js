@@ -24,4 +24,15 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+
+  // Simple hero slider logic
+  const heroSlides = document.querySelectorAll('.hero-slide');
+  let currentHeroIndex = 0;
+  if (heroSlides.length > 1) {
+    setInterval(() => {
+      heroSlides[currentHeroIndex].classList.remove('active');
+      currentHeroIndex = (currentHeroIndex + 1) % heroSlides.length;
+      heroSlides[currentHeroIndex].classList.add('active');
+    }, 8000); // change slide every 8 seconds
+  }
 });
