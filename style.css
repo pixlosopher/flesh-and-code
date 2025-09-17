@@ -72,8 +72,10 @@ body {
 /* Hero */
 .hero {
   position: relative;
+  /* Ensure the hero section does not show a fixed background image so videos remain the only visual */
   min-height: 100vh;
-  background-image: url('hero.png');
+  background-color: #000; /* solid black background as fallback */
+  background-image: none;
   background-size: cover;
   background-position: center;
   display: flex;

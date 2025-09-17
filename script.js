@@ -50,5 +50,16 @@ document.addEventListener('DOMContentLoaded', () => {
     } catch (e) {
       console.warn('Background audio could not play automatically', e);
     }
+    // Fallback: on first user interaction (click), attempt to start audio if it didn't autoplay
+    const tryPlayOnInteraction = () => {
+      if (bgAudio.paused) {
+        bgAudio.play().catch(() => {
+          // still blocked
+        });
+      }
+      // remove listener after first attempt
+      document.removeEventListener('click', tryPlayOnInteraction);
+    };
+    document.addEventListener('click', tryPlayOnInteraction);
   }
 });
