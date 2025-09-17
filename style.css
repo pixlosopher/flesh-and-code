@@ -336,6 +336,35 @@ body {
   margin-top: 2rem;
 }
 
+/* Features list in the About section */
+.features {
+  list-style: none;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  padding-left: 0;
+  color: #b5b5b5;
+}
+.features li {
+  margin: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  font-size: 0.95rem;
+}
+.features li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.6rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: #ff33aa;
+}
+.features strong {
+  color: #ff33aa;
+  font-weight: 600;
+}
+
 /* Multimedia Section */
 .multimedia {
   padding: 4rem 0;
