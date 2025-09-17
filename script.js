@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
       heroSlides[currentHeroIndex].classList.remove('active');
       currentHeroIndex = (currentHeroIndex + 1) % heroSlides.length;
       heroSlides[currentHeroIndex].classList.add('active');
-    }, 8000); // change slide every 8 seconds
+    }, 10000); // change slide every 10 seconds for smoother transitions
   }
 
   // Attempt to play looping background audio at a moderate volume
