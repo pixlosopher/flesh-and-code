@@ -14,7 +14,8 @@
   <header class="site-header">
     <div class="logo">Flesh<span>&amp;</span>Code</div>
     <nav class="site-nav">
-      <a href="#overview">Overview</a>
+      <a href="#overview">About</a>
+      <a href="#videos">Videos</a>
       <a href="#preview">Preview</a>
       <a href="#support">Support</a>
     </nav>
@@ -93,6 +94,8 @@
         </div>
       </div>
     </div>
+    <!-- Audio toggle button to allow visitors to control the background track -->
+    <button id="audio-toggle" class="audio-toggle-btn">Play Sound</button>
   </section>
 
   <!-- Background audio that loops indefinitely; hidden from view -->
@@ -108,11 +111,53 @@
       <h2>About</h2>
       <p class="pitch">Flesh &amp; Code is a hybrid philosophical–artistic project: 320 aphorisms (“arrows”) inspired by phenomenology and glitch aesthetics become images, loops, audio and objects. It proposes a new ontology where bodies and technologies interpenetrate.</p>
       <p class="pitch">Your support brings this constellation to life—from Guadalajara’s premiere to international screens. Funds are used to produce visuals and sound, craft tactile sculptures, and sustain the archive. Join us in shaping the digital flesh.</p>
-      <ul class="features">
-        <li><strong>320 Arrows:</strong> poetic fragments probing flesh, perception and code.</li>
-        <li><strong>Immersive Experiences:</strong> exhibitions of animated loops, framed stills and glitch sound.</li>
-        <li><strong>Collect &amp; Support:</strong> limited NFTs and donations that fuel the project.</li>
-      </ul>
+      <div class="features-grid">
+        <div class="feature-item">
+          <h3>320 Arrows</h3>
+          <p>Poetic lightning fragments exploring flesh, perception and code.</p>
+        </div>
+        <div class="feature-item">
+          <h3>Immersive Experiences</h3>
+          <p>Exhibitions of animated loops, framed stills, glitch sound and 3D objects.</p>
+        </div>
+        <div class="feature-item">
+          <h3>Collect &amp; Support</h3>
+          <p>Limited NFTs, donations and memberships unlock exclusive art and archives.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Gallery Section showcasing hero loops -->
+  <section id="videos" class="videos">
+    <div class="container">
+      <h2>Video Gallery</h2>
+      <div class="video-grid">
+        <div class="video-card">
+          <video autoplay muted loop playsinline>
+            <source src="touch-a-screen.mp4" type="video/mp4" />
+          </video>
+          <p>Touch a screen and the screen fingerprints you back.</p>
+        </div>
+        <div class="video-card">
+          <video autoplay muted loop playsinline>
+            <source src="GLITCH%20IS%20THE%20STUTTER.mp4" type="video/mp4" />
+          </video>
+          <p>Glitch is the stutter of hidden truth.</p>
+        </div>
+        <div class="video-card">
+          <video autoplay muted loop playsinline>
+            <source src="PIXEL%20KISS.mp4" type="video/mp4" />
+          </video>
+          <p>Pixel kiss, digital bliss.</p>
+        </div>
+        <div class="video-card">
+          <video autoplay muted loop playsinline>
+            <source src="REWINDS%20CAUSALITY.mp4" type="video/mp4" />
+          </video>
+          <p>Rewind causality, glitch the timeline.</p>
+        </div>
+      </div>
     </div>
   </section>
 

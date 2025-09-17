@@ -62,4 +62,26 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     document.addEventListener('click', tryPlayOnInteraction);
   }
+
+  // Audio toggle button control
+  const audioToggle = document.getElementById('audio-toggle');
+  if (bgAudio && audioToggle) {
+    // Initialize button label based on autoplay state
+    // If the audio is paused (autoplay blocked), prompt to play
+    audioToggle.textContent = bgAudio.paused ? 'Play Sound' : 'Pause Sound';
+    audioToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (bgAudio.paused) {
+        bgAudio.play().then(() => {
+          audioToggle.textContent = 'Pause Sound';
+        }).catch(() => {
+          // still blocked; keep prompt to play
+          audioToggle.textContent = 'Play Sound';
+        });
+      } else {
+        bgAudio.pause();
+        audioToggle.textContent = 'Play Sound';
+      }
+    });
+  }
 });
