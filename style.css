@@ -38,22 +38,24 @@ body {
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #f5f5f5;
+  color: #e0ffe0; /* light green for main logo text */
+  font-family: 'Share Tech Mono', monospace;
 }
 .logo span {
-  color: #ff33aa;
+  color: #00ccff; /* neon blue accent for ampersand */
 }
 
 .site-nav a {
   margin-left: 1.5rem;
   text-decoration: none;
-  color: #cccccc;
+  color: #99ccee; /* soft blue navigation links */
   font-weight: 500;
   position: relative;
+  font-family: 'Share Tech Mono', monospace;
   transition: color 0.3s;
 }
 .site-nav a:hover {
-  color: #ff33aa;
+  color: #00ccff; /* neon blue hover */
 }
 .site-nav a::after {
   content: '';
@@ -62,7 +64,7 @@ body {
   bottom: -4px;
   width: 0;
   height: 2px;
-  background: #ff33aa;
+  background: #00ccff;
   transition: width 0.3s;
 }
 .site-nav a:hover::after {
@@ -119,16 +121,18 @@ body {
   font-size: 3rem;
   font-weight: 700;
   letter-spacing: 3px;
-  color: #ffffff;
   text-transform: uppercase;
+  color: #00ff99; /* neon green for main heading */
+  font-family: 'Share Tech Mono', monospace;
 }
 .hero .ampersand {
-  color: #ff33aa;
+  color: #00ccff; /* neon blue accent in title */
 }
 .subtitle {
   font-size: 1.2rem;
-  color: #dcdcdc;
+  color: #66ccff; /* soft blue for subtitle */
   margin-bottom: 2rem;
+  font-family: 'Share Tech Mono', monospace;
 }
 
 /* Hero slider styles */
@@ -152,10 +156,11 @@ body {
 /* Tagline styling for hero section */
 .tagline {
   font-size: 1rem;
-  color: #d0d0d0;
+  color: #88ffcc; /* pale green for tagline */
   font-style: italic;
   margin-top: -0.5rem;
   margin-bottom: 2rem;
+  font-family: 'Share Tech Mono', monospace;
 }
 .hero-buttons {
   display: flex;
@@ -165,24 +170,25 @@ body {
 }
 .cta-button {
   display: inline-block;
-  background: #ff33aa;
+  background: #00ccff; /* neon blue primary buttons */
   color: #0d0d0d;
   padding: 0.75rem 1.5rem;
   font-weight: 600;
   border-radius: 4px;
   text-decoration: none;
+  font-family: 'Share Tech Mono', monospace;
   transition: transform 0.2s, background 0.3s;
 }
 .cta-button:hover {
   transform: translateY(-2px);
-  background: #ff59c2;
+  background: #33ddff;
 }
 .cta-button.secondary {
-  background: #333333;
+  background: #004466; /* dark blue secondary buttons */
   color: #ffffff;
 }
 .cta-button.secondary:hover {
-  background: #444444;
+  background: #005588;
 }
 
 /* Audio toggle button */
@@ -192,16 +198,17 @@ body {
   top: 1.5rem;
   padding: 0.5rem 1rem;
   font-size: 0.75rem;
-  color: #ff33aa;
+  color: #00ccff;
   background: transparent;
-  border: 2px solid #ff33aa;
+  border: 2px solid #00ccff;
   border-radius: 4px;
   cursor: pointer;
   z-index: 2;
+  font-family: 'Share Tech Mono', monospace;
   transition: background 0.3s, color 0.3s;
 }
-.audio-toggle-btn:hover {
-  background: #ff33aa;
+ .audio-toggle-btn:hover {
+  background: #00ccff;
   color: #0d0d0d;
 }
 
@@ -213,13 +220,13 @@ body {
   margin-top: 2rem;
 }
 .feature-item h3 {
-  color: #ff33aa;
+  color: #00ccff; /* neon blue headings for features */
   margin-bottom: 0.5rem;
   font-size: 1.3rem;
   text-align: center;
 }
 .feature-item p {
-  color: #cccccc;
+  color: #99ccee; /* light blue for feature text */
   font-weight: 300;
   text-align: center;
   font-size: 0.9rem;
@@ -233,7 +240,7 @@ body {
 .videos h2 {
   font-size: 2rem;
   text-align: center;
-  color: #ff33aa;
+  color: #00ccff; /* neon blue section titles */
   margin-bottom: 1.5rem;
   text-transform: uppercase;
 }
@@ -257,7 +264,7 @@ body {
   object-fit: cover;
 }
 .video-card p {
-  color: #cccccc;
+  color: #99ccee;
   font-size: 0.85rem;
   padding: 0.75rem;
   text-align: center;
@@ -272,7 +279,7 @@ body {
   font-size: 2rem;
   margin-bottom: 1rem;
   text-align: center;
-  color: #ff33aa;
+  color: #00ccff;
   text-transform: uppercase;
 }
 .pitch {
@@ -280,14 +287,14 @@ body {
   margin: 0 auto 2rem;
   text-align: center;
   font-weight: 300;
-  color: #cccccc;
+  color: #99ccee;
 }
 .context p {
   margin: 0.5rem 0;
-  color: #b5b5b5;
+  color: #99ccee;
 }
 .context p strong {
-  color: #ff33aa;
+  color: #00ccff;
   font-weight: 600;
 }
 .concept-grid {
@@ -297,7 +304,7 @@ body {
   margin-top: 2rem;
 }
 .concept-grid h3 {
-  color: #ff33aa;
+  color: #00ccff;
   margin-bottom: 0.5rem;
   font-size: 1.25rem;
 }
@@ -315,14 +322,14 @@ body {
 .arrows h2 {
   font-size: 2rem;
   text-align: center;
-  color: #ff33aa;
+  color: #00ccff;
   margin-bottom: 1rem;
 }
 .arrows-intro {
   max-width: 700px;
   margin: 0 auto 2rem;
   text-align: center;
-  color: #cccccc;
+  color: #99ccee;
   font-weight: 300;
 }
 .arrows-grid {
@@ -350,18 +357,19 @@ body {
   margin-bottom: 0.75rem;
 }
 .arrow-text {
-  color: #eaeaea;
+  color: #99ccee;
   font-size: 0.9rem;
   margin-bottom: 0.75rem;
+  font-family: 'Share Tech Mono', monospace;
 }
 .arrow-text em {
-  color: #b5b5b5;
+  color: #66cc99;
   display: block;
   margin-top: 0.25rem;
   font-style: italic;
 }
 .view-more {
-  color: #ff33aa;
+  color: #00ccff;
   text-decoration: none;
   font-weight: 500;
 }
@@ -381,12 +389,12 @@ body {
 .exhibition h2 {
   font-size: 2rem;
   text-align: center;
-  color: #ff33aa;
+  color: #00ccff;
   margin-bottom: 0.5rem;
 }
 .exhibition-date {
   text-align: center;
-  color: #cccccc;
+  color: #99ccee;
   margin-bottom: 1.5rem;
   font-style: italic;
 }
@@ -399,11 +407,11 @@ body {
   margin-right: auto;
 }
 .exhibition-details li {
-  color: #b5b5b5;
+  color: #99ccee;
   margin-bottom: 0.75rem;
 }
 .exhibition-details strong {
-  color: #ff33aa;
+  color: #00ccff;
 }
 .exhibition-cta {
   display: flex;
@@ -420,12 +428,12 @@ body {
 .nft h2 {
   font-size: 2rem;
   text-align: center;
-  color: #ff33aa;
+  color: #00ccff;
   margin-bottom: 1rem;
 }
 .nft-description {
   text-align: center;
-  color: #cccccc;
+  color: #99ccee;
   margin-bottom: 1.5rem;
 }
 .nft-grid {
@@ -442,14 +450,14 @@ body {
   max-width: 400px;
 }
 .nft-info h3 {
-  color: #ff33aa;
+  color: #00ccff;
   margin-bottom: 0.5rem;
   font-size: 1.25rem;
 }
 .nft-info ul {
   list-style: disc;
   padding-left: 1rem;
-  color: #b5b5b5;
+  color: #99ccee;
 }
 .nft-info li {
   margin-bottom: 0.5rem;
@@ -465,7 +473,7 @@ body {
   max-width: 800px;
   margin: 0 auto 2rem;
   padding-left: 0;
-  color: #b5b5b5;
+  color: #99ccee;
 }
 .features li {
   margin: 0.5rem 0;
@@ -481,10 +489,10 @@ body {
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 50%;
-  background: #ff33aa;
+  background: #00ccff;
 }
 .features strong {
-  color: #ff33aa;
+  color: #00ccff;
   font-weight: 600;
 }
 
@@ -496,7 +504,7 @@ body {
 .multimedia h2 {
   font-size: 2rem;
   text-align: center;
-  color: #ff33aa;
+  color: #00ccff;
   margin-bottom: 1.5rem;
 }
 .samples-grid {
@@ -513,7 +521,7 @@ body {
   border-radius: 6px;
 }
 .sample-item h4 {
-  color: #ff33aa;
+  color: #00ccff;
   margin-bottom: 0.75rem;
   font-size: 1.2rem;
   text-align: center;
@@ -548,7 +556,7 @@ body {
   animation: glitch 3s infinite;
 }
 .glitch-caption {
-  color: #b5b5b5;
+  color: #99ccee;
   font-size: 0.9rem;
   text-align: center;
   margin-top: 0.5rem;
@@ -591,7 +599,7 @@ body {
   margin-bottom: 0.5rem;
 }
 .object-caption {
-  color: #b5b5b5;
+  color: #99ccee;
   font-size: 0.9rem;
   text-align: center;
 }
@@ -604,7 +612,7 @@ body {
 .manifesto h2 {
   font-size: 2rem;
   text-align: center;
-  color: #ff33aa;
+  color: #00ccff;
   margin-bottom: 1rem;
 }
 .manifesto-list {
@@ -615,11 +623,11 @@ body {
 }
 .manifesto-list li {
   margin-bottom: 0.75rem;
-  color: #b5b5b5;
+  color: #99ccee;
   font-size: 1rem;
 }
 .manifesto-list strong {
-  color: #ff33aa;
+  color: #00ccff;
   margin-right: 0.5rem;
 }
 .manifesto-cta {
@@ -635,7 +643,7 @@ body {
 .team h2 {
   font-size: 2rem;
   text-align: center;
-  color: #ff33aa;
+  color: #00ccff;
   margin-bottom: 1.5rem;
 }
 .team-list {
@@ -644,12 +652,12 @@ body {
   gap: 2rem;
 }
 .team-member h3 {
-  color: #ff33aa;
+  color: #00ccff;
   margin-bottom: 0.5rem;
   font-size: 1.25rem;
 }
 .team-member p {
-  color: #b5b5b5;
+  color: #99ccee;
   font-size: 0.9rem;
 }
 
@@ -661,7 +669,7 @@ body {
 .press h2 {
   font-size: 2rem;
   text-align: center;
-  color: #ff33aa;
+  color: #00ccff;
   margin-bottom: 1.5rem;
 }
 .press-kit {
@@ -669,7 +677,7 @@ body {
   margin-bottom: 2rem;
 }
 .press-kit p {
-  color: #b5b5b5;
+  color: #99ccee;
   margin-bottom: 0.5rem;
 }
 .contact-form-wrapper {
@@ -680,12 +688,12 @@ body {
   margin: 0 auto 2rem;
 }
 .contact-form-wrapper h3 {
-  color: #ff33aa;
+  color: #00ccff;
   margin-bottom: 0.5rem;
   text-align: center;
 }
 .contact-form-wrapper p {
-  color: #b5b5b5;
+  color: #99ccee;
   text-align: center;
   margin-bottom: 1rem;
 }
@@ -713,11 +721,11 @@ body {
   margin: 0 auto;
 }
 .newsletter-signup h3 {
-  color: #ff33aa;
+  color: #00ccff;
   margin-bottom: 0.5rem;
 }
 .newsletter-signup p {
-  color: #b5b5b5;
+  color: #99ccee;
   margin-bottom: 1rem;
 }
 .subscribe-form {
@@ -741,7 +749,7 @@ body {
 .timeline h2 {
   font-size: 2rem;
   text-align: center;
-  color: #ff33aa;
+  color: #00ccff;
   margin-bottom: 1rem;
 }
 .timeline-list {
@@ -752,7 +760,7 @@ body {
 }
 .timeline-list li {
   margin-bottom: 1rem;
-  color: #b5b5b5;
+  color: #99ccee;
   position: relative;
   padding-left: 3rem;
 }
@@ -760,7 +768,7 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  color: #ff33aa;
+  color: #00ccff;
   font-weight: 700;
 }
 .impact-goals {
@@ -768,14 +776,14 @@ body {
   margin: 2rem auto 0;
 }
 .impact-goals h3 {
-  color: #ff33aa;
+  color: #00ccff;
   margin-bottom: 0.75rem;
   text-align: center;
 }
 .impact-goals ul {
   list-style: disc;
   padding-left: 1.5rem;
-  color: #b5b5b5;
+  color: #99ccee;
 }
 .impact-goals li {
   margin-bottom: 0.5rem;
@@ -786,7 +794,7 @@ body {
   padding: 2rem 0;
   background: #0d0d0d;
   text-align: center;
-  color: #b5b5b5;
+  color: #99ccee;
 }
 .footer-social {
   display: flex;
@@ -795,7 +803,7 @@ body {
   margin-bottom: 1rem;
 }
 .footer-social a {
-  color: #ff33aa;
+  color: #00ccff;
   text-decoration: none;
   font-weight: 500;
 }
@@ -805,12 +813,13 @@ body {
 .site-footer p {
   margin: 0.5rem 0;
   font-size: 0.9rem;
+  color: #99ccee;
 }
 #eth-address {
   font-family: monospace;
 }
 #copy-btn {
-  background: #333333;
+  background: #004466;
   color: #ffffff;
   border: none;
   padding: 0.3rem 0.5rem;
@@ -820,5 +829,5 @@ body {
   transition: background 0.3s;
 }
 #copy-btn:hover {
-  background: #444444;
+  background: #005588;
 }
