@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Corruption - Flesh & Code Game</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="game.css" />
+</head>
+<body>
+  <div class="game-container">
+    <!-- Game Header -->
+    <header class="game-header">
+      <div class="logo">Digital<span>Corruption</span></div>
+      <div class="game-stats">
+        <div class="stat">
+          <span class="stat-label">Score:</span>
+          <span id="score" class="stat-value">0</span>
+        </div>
+        <div class="stat">
+          <span class="stat-label">Level:</span>
+          <span id="level" class="stat-value">1</span>
+        </div>
+        <div class="stat">
+          <span class="stat-label">Lives:</span>
+          <span id="lives" class="stat-value">3</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Game Canvas -->
+    <div class="game-wrapper">
+      <canvas id="gameCanvas"></canvas>
+
+      <!-- Start Screen -->
+      <div id="startScreen" class="overlay-screen">
+        <div class="screen-content">
+          <h1 class="game-title">Digital<span>Corruption</span></h1>
+          <p class="game-subtitle">Navigate the corrupted digital realm</p>
+          <div class="instructions">
+            <h3>How to Play:</h3>
+            <p><strong>Arrow Keys</strong> or <strong>WASD</strong> - Move</p>
+            <p><strong>Space</strong> - Dash</p>
+            <p>Collect <span class="highlight-green">code fragments</span></p>
+            <p>Avoid <span class="highlight-red">glitch corruption</span></p>
+          </div>
+          <button id="startButton" class="game-button">Start Game</button>
+        </div>
+      </div>
+
+      <!-- Pause Screen -->
+      <div id="pauseScreen" class="overlay-screen hidden">
+        <div class="screen-content">
+          <h2>Game Paused</h2>
+          <p>Press <strong>ESC</strong> or <strong>P</strong> to resume</p>
+          <button id="resumeButton" class="game-button">Resume</button>
+          <button id="restartButton" class="game-button secondary">Restart</button>
+        </div>
+      </div>
+
+      <!-- Game Over Screen -->
+      <div id="gameOverScreen" class="overlay-screen hidden">
+        <div class="screen-content">
+          <h2 class="glitch-text">System Corrupted</h2>
+          <p class="final-score">Final Score: <span id="finalScore">0</span></p>
+          <p class="final-level">Level Reached: <span id="finalLevel">1</span></p>
+          <button id="playAgainButton" class="game-button">Play Again</button>
+        </div>
+      </div>
+
+      <!-- Touch Controls for Mobile -->
+      <div id="touchControls" class="touch-controls">
+        <div class="dpad">
+          <button class="dpad-btn dpad-up" data-direction="up">▲</button>
+          <button class="dpad-btn dpad-down" data-direction="down">▼</button>
+          <button class="dpad-btn dpad-left" data-direction="left">◄</button>
+          <button class="dpad-btn dpad-right" data-direction="right">►</button>
+        </div>
+        <button id="dashButton" class="action-button">DASH</button>
+      </div>
+    </div>
+
+    <!-- Audio Toggle -->
+    <button id="audioToggle" class="audio-toggle">🔊</button>
+  </div>
+
+  <!-- Background Audio -->
+  <audio id="bgMusic" loop preload="auto">
+    <source src="Digital%20Pulse%20ext%20v1.1.2.1.1.mp3" type="audio/mpeg" />
+  </audio>
+
+  <audio id="collectSound" preload="auto">
+    <source src="glitch.wav" type="audio/wav" />
+  </audio>
+
+  <script src="game.js"></script>
+</body>
+</html>
