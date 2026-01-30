@@ -334,12 +334,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
       glitchInitialized = true;
     } catch (e) {
-      // Fallback: just connect directly if Web Audio fails
-      console.log('Audio glitch effect not available');
+      // Fallback: connect directly to destination if Web Audio fails
+      console.log('Audio glitch effect not available, using direct playback');
+      glitchInitialized = true; // Mark as initialized to prevent retry
     }
   }
 
-  // Initialize glitch on first audiobook play
+  // Initialize glitch on first audiobook play (disabled for now - CORS issues with external audio)
+  // The Web Audio API requires same-origin or CORS-enabled audio sources
+  // Dropbox doesn't provide proper CORS headers for createMediaElementSource
+  /*
   if (audiobookAudio) {
     audiobookAudio.addEventListener('play', () => {
       if (!glitchInitialized) {
@@ -352,6 +356,11 @@ document.addEventListener('DOMContentLoaded', () => {
       if (noiseGainNode) {
         noiseGainNode.gain.value = NOISE_LEVEL;
       }
+    });
+  */
+  if (audiobookAudio) {
+    audiobookAudio.addEventListener('play', () => {
+      // Glitch effect disabled for external audio sources
     });
 
     // Mute noise when audiobook pauses or ends
