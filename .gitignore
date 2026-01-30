@@ -1,0 +1,17 @@
+# Large files - host externally
+Flesh and Code.mp3
+GLITCH IS THE STUTTER.mp4
+REWINDS CAUSALITY.mp4
+
+# Mac system files
+.DS_Store
+*.DS_Store
+
+# Backup files
+*.bak
+
+# Large original PNG (using optimized JPG instead)
+COVER FLESH AND CODE.png
+
+# Claude session files
+.claude/

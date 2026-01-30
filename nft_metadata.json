@@ -1,0 +1,6722 @@
+[
+  {
+    "id": 1,
+    "name": "Flesh & Code #001",
+    "description": "Edges are the myths of solids.",
+    "image": "ipfs://YOUR_CID_HERE/001.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "I. Encroachment"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hybrid Skin"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Flesh & Code #002",
+    "description": "Touch a screen and the screen fingerprints you back.",
+    "image": "ipfs://YOUR_CID_HERE/002.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "I. Encroachment"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hybrid Skin"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Flesh & Code #003",
+    "description": "Privacy is a rounding error in the pixel epoch.",
+    "image": "ipfs://YOUR_CID_HERE/003.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "I. Encroachment"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hybrid Skin"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Flesh & Code #004",
+    "description": "Stone remembers the sculptor.",
+    "image": "ipfs://YOUR_CID_HERE/004.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "I. Encroachment"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hybrid Skin"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 4
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Flesh & Code #005",
+    "description": "A wall is a negotiation between two airs.",
+    "image": "ipfs://YOUR_CID_HERE/005.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "I. Encroachment"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hybrid Skin"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 5
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Flesh & Code #006",
+    "description": "Silence leaks.",
+    "image": "ipfs://YOUR_CID_HERE/006.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "I. Encroachment"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hybrid Skin"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 6
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Flesh & Code #007",
+    "description": "Code compiles first in the nervous system.",
+    "image": "ipfs://YOUR_CID_HERE/007.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "I. Encroachment"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hybrid Skin"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 7
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Flesh & Code #008",
+    "description": "The city is a shared organ.",
+    "image": "ipfs://YOUR_CID_HERE/008.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "I. Encroachment"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hybrid Skin"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 8
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Flesh & Code #009",
+    "description": "Clouds trespass without lawyers.",
+    "image": "ipfs://YOUR_CID_HERE/009.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "I. Encroachment"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hybrid Skin"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 9
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Flesh & Code #010",
+    "description": "Pixels bleed because they are lonely.",
+    "image": "ipfs://YOUR_CID_HERE/010.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "I. Encroachment"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hybrid Skin"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 10
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Flesh & Code #011",
+    "description": "Love is the refusal to heal a boundary.",
+    "image": "ipfs://YOUR_CID_HERE/011.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "I. Encroachment"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hybrid Skin"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 11
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Flesh & Code #012",
+    "description": "Entropy is the right to roam.",
+    "image": "ipfs://YOUR_CID_HERE/012.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "I. Encroachment"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hybrid Skin"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 12
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Flesh & Code #013",
+    "description": "The river steps into you first.",
+    "image": "ipfs://YOUR_CID_HERE/013.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "I. Encroachment"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hybrid Skin"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 13
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Flesh & Code #014",
+    "description": "Borders are dermatological crises of the Earth.",
+    "image": "ipfs://YOUR_CID_HERE/014.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "I. Encroachment"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hybrid Skin"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 14
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Flesh & Code #015",
+    "description": "Every breath is contraband air.",
+    "image": "ipfs://YOUR_CID_HERE/015.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "I. Encroachment"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hybrid Skin"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 15
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Flesh & Code #016",
+    "description": "Wi-Fi is the city dreaming through bone.",
+    "image": "ipfs://YOUR_CID_HERE/016.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "I. Encroachment"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hybrid Skin"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 16
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Flesh & Code #017",
+    "description": "Rust is iron confessing homesickness.",
+    "image": "ipfs://YOUR_CID_HERE/017.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "I. Encroachment"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hybrid Skin"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 17
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Flesh & Code #018",
+    "description": "Pixels kiss—compression is their bruise.",
+    "image": "ipfs://YOUR_CID_HERE/018.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "I. Encroachment"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hybrid Skin"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 18
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Flesh & Code #019",
+    "description": "Coffee is seed-water colonizing bloodstream.",
+    "image": "ipfs://YOUR_CID_HERE/019.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "I. Encroachment"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hybrid Skin"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 19
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Flesh & Code #020",
+    "description": "Sleepwalkers prove dreams annex hallways.",
+    "image": "ipfs://YOUR_CID_HERE/020.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "I. Encroachment"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hybrid Skin"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 20
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Flesh & Code #021",
+    "description": "A kiss: two ecosystems swapping diplomats.",
+    "image": "ipfs://YOUR_CID_HERE/021.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "I. Encroachment"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hybrid Skin"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 21
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Flesh & Code #022",
+    "description": "Sweat is the body's open-source code.",
+    "image": "ipfs://YOUR_CID_HERE/022.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "I. Encroachment"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hybrid Skin"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 22
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Flesh & Code #023",
+    "description": "Doors do not separate; they choreograph hesitation.",
+    "image": "ipfs://YOUR_CID_HERE/023.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "I. Encroachment"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hybrid Skin"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 23
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Flesh & Code #024",
+    "description": "Velcro civilizes the burr.",
+    "image": "ipfs://YOUR_CID_HERE/024.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "I. Encroachment"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hybrid Skin"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 24
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Flesh & Code #025",
+    "description": "Fog is the ocean's handwriting on inland glass.",
+    "image": "ipfs://YOUR_CID_HERE/025.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "I. Encroachment"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hybrid Skin"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 25
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Flesh & Code #026",
+    "description": "Antibiotics are sieges on invisible cities.",
+    "image": "ipfs://YOUR_CID_HERE/026.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "I. Encroachment"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hybrid Skin"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 26
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Flesh & Code #027",
+    "description": "Earworms prove acoustics can trespass neurology.",
+    "image": "ipfs://YOUR_CID_HERE/027.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "I. Encroachment"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hybrid Skin"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 27
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Flesh & Code #028",
+    "description": "The barcode tattoos objects into bureaucratic flesh.",
+    "image": "ipfs://YOUR_CID_HERE/028.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "I. Encroachment"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hybrid Skin"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 28
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Flesh & Code #029",
+    "description": "Graffiti is concrete admitting vulnerability.",
+    "image": "ipfs://YOUR_CID_HERE/029.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "I. Encroachment"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hybrid Skin"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 29
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Flesh & Code #030",
+    "description": "Plastic is fossilized sunlight smuggled into the Anthropocene.",
+    "image": "ipfs://YOUR_CID_HERE/030.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "I. Encroachment"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hybrid Skin"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 30
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "name": "Flesh & Code #031",
+    "description": "Spam is linguistic pollen on the wind of capitalism.",
+    "image": "ipfs://YOUR_CID_HERE/031.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "I. Encroachment"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hybrid Skin"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 31
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "name": "Flesh & Code #032",
+    "description": "Velvet ropes keep bodies out, not gaze.",
+    "image": "ipfs://YOUR_CID_HERE/032.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "I. Encroachment"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hybrid Skin"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 32
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "name": "Flesh & Code #033",
+    "description": "Handrails remember every stumble.",
+    "image": "ipfs://YOUR_CID_HERE/033.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "I. Encroachment"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hybrid Skin"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 33
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "name": "Flesh & Code #034",
+    "description": "Breadcrumb trails civilize wilderness—then lure wolves.",
+    "image": "ipfs://YOUR_CID_HERE/034.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "I. Encroachment"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hybrid Skin"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 34
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "name": "Flesh & Code #035",
+    "description": "Touchscreen smudges are secular stigmata.",
+    "image": "ipfs://YOUR_CID_HERE/035.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "I. Encroachment"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hybrid Skin"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 35
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "name": "Flesh & Code #036",
+    "description": "Headphones annex public airspace into private theater.",
+    "image": "ipfs://YOUR_CID_HERE/036.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "I. Encroachment"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hybrid Skin"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 36
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "name": "Flesh & Code #037",
+    "description": "Moss is stone turning green with gossip.",
+    "image": "ipfs://YOUR_CID_HERE/037.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "I. Encroachment"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hybrid Skin"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 37
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "name": "Flesh & Code #038",
+    "description": "Passwords: syllables welded into portcullises.",
+    "image": "ipfs://YOUR_CID_HERE/038.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "I. Encroachment"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hybrid Skin"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 38
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "name": "Flesh & Code #039",
+    "description": "USB cables are veins of provisional cyborgs.",
+    "image": "ipfs://YOUR_CID_HERE/039.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "I. Encroachment"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hybrid Skin"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 39
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "name": "Flesh & Code #040",
+    "description": "Footprints are land acknowledgments written in pressure.",
+    "image": "ipfs://YOUR_CID_HERE/040.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "I. Encroachment"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hybrid Skin"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 40
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "name": "Flesh & Code #041",
+    "description": "Perfume is diplomacy for strangers' nostrils.",
+    "image": "ipfs://YOUR_CID_HERE/041.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "I. Encroachment"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hybrid Skin"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 41
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "name": "Flesh & Code #042",
+    "description": "Snow blankets but does not silence.",
+    "image": "ipfs://YOUR_CID_HERE/042.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "I. Encroachment"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hybrid Skin"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 42
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "name": "Flesh & Code #043",
+    "description": "Haptic feedback is silicon learning manners.",
+    "image": "ipfs://YOUR_CID_HERE/043.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "I. Encroachment"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hybrid Skin"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 43
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "name": "Flesh & Code #044",
+    "description": "Rusty swings sing lullabies to absent children.",
+    "image": "ipfs://YOUR_CID_HERE/044.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "I. Encroachment"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hybrid Skin"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 44
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "name": "Flesh & Code #045",
+    "description": "QR codes are runes awaiting optic priests.",
+    "image": "ipfs://YOUR_CID_HERE/045.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "I. Encroachment"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hybrid Skin"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 45
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "name": "Flesh & Code #046",
+    "description": "Pollen is floral spam, essential and indiscriminate.",
+    "image": "ipfs://YOUR_CID_HERE/046.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "I. Encroachment"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hybrid Skin"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 46
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "name": "Flesh & Code #047",
+    "description": "The tongue exports moisture with every word.",
+    "image": "ipfs://YOUR_CID_HERE/047.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "I. Encroachment"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hybrid Skin"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 47
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "name": "Flesh & Code #048",
+    "description": "Mirrors plagiarize light to flatter matter.",
+    "image": "ipfs://YOUR_CID_HERE/048.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "I. Encroachment"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hybrid Skin"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 48
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "name": "Flesh & Code #049",
+    "description": "Dust is the democracy of decay.",
+    "image": "ipfs://YOUR_CID_HERE/049.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "I. Encroachment"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hybrid Skin"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 49
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "name": "Flesh & Code #050",
+    "description": "Wi-Fi dead zones map digital poverty.",
+    "image": "ipfs://YOUR_CID_HERE/050.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "I. Encroachment"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hybrid Skin"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 50
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "name": "Flesh & Code #051",
+    "description": "The canvas paints you back.",
+    "image": "ipfs://YOUR_CID_HERE/051.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "II. Passivity"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Composed Latency"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 51
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "name": "Flesh & Code #052",
+    "description": "Waiting is gestation with ears.",
+    "image": "ipfs://YOUR_CID_HERE/052.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "II. Passivity"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Composed Latency"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 52
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "name": "Flesh & Code #053",
+    "description": "Strength begins where clenching ends.",
+    "image": "ipfs://YOUR_CID_HERE/053.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "II. Passivity"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Composed Latency"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 53
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "name": "Flesh & Code #054",
+    "description": "Receivers outnumber transmitters in healthy ecologies.",
+    "image": "ipfs://YOUR_CID_HERE/054.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "II. Passivity"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Composed Latency"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 54
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "name": "Flesh & Code #055",
+    "description": "The pause button invented negative space.",
+    "image": "ipfs://YOUR_CID_HERE/055.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "II. Passivity"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Composed Latency"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 55
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "name": "Flesh & Code #056",
+    "description": "Cursor blink: Morse code for 'I hear you.'",
+    "image": "ipfs://YOUR_CID_HERE/056.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "II. Passivity"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Composed Latency"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 56
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "name": "Flesh & Code #057",
+    "description": "A seed is a clenched fist full of applause.",
+    "image": "ipfs://YOUR_CID_HERE/057.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "II. Passivity"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Composed Latency"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 57
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "name": "Flesh & Code #058",
+    "description": "Latency is the gift-wrap on sensation.",
+    "image": "ipfs://YOUR_CID_HERE/058.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "II. Passivity"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Composed Latency"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 58
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "name": "Flesh & Code #059",
+    "description": "The lens welcomes light; it does not hunt it.",
+    "image": "ipfs://YOUR_CID_HERE/059.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "II. Passivity"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Composed Latency"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 59
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "name": "Flesh & Code #060",
+    "description": "Surrender is the shortest path to complexity.",
+    "image": "ipfs://YOUR_CID_HERE/060.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "II. Passivity"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Composed Latency"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 60
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "name": "Flesh & Code #061",
+    "description": "Silicon wafers are deserts praying for electrons.",
+    "image": "ipfs://YOUR_CID_HERE/061.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "II. Passivity"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Composed Latency"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 61
+      }
+    ]
+  },
+  {
+    "id": 62,
+    "name": "Flesh & Code #062",
+    "description": "Perceptive organs measure moral IQ.",
+    "image": "ipfs://YOUR_CID_HERE/062.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "II. Passivity"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Composed Latency"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 62
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "name": "Flesh & Code #063",
+    "description": "Meditation is firmware update for mammal brains.",
+    "image": "ipfs://YOUR_CID_HERE/063.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "II. Passivity"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Composed Latency"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 63
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "name": "Flesh & Code #064",
+    "description": "The oppressed refine perception.",
+    "image": "ipfs://YOUR_CID_HERE/064.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "II. Passivity"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Composed Latency"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 64
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "name": "Flesh & Code #065",
+    "description": "Rain pools → mirrors happen.",
+    "image": "ipfs://YOUR_CID_HERE/065.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "II. Passivity"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Composed Latency"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 65
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "name": "Flesh & Code #066",
+    "description": "Passivity is field readiness.",
+    "image": "ipfs://YOUR_CID_HERE/066.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "II. Passivity"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Composed Latency"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 66
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "name": "Flesh & Code #067",
+    "description": "Breathing in auditions the universe.",
+    "image": "ipfs://YOUR_CID_HERE/067.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "II. Passivity"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Composed Latency"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 67
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "name": "Flesh & Code #068",
+    "description": "Night is Earth's eyelid.",
+    "image": "ipfs://YOUR_CID_HERE/068.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "II. Passivity"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Composed Latency"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 68
+      }
+    ]
+  },
+  {
+    "id": 69,
+    "name": "Flesh & Code #069",
+    "description": "Marble listens centuries before the first strike.",
+    "image": "ipfs://YOUR_CID_HERE/069.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "II. Passivity"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Composed Latency"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 69
+      }
+    ]
+  },
+  {
+    "id": 70,
+    "name": "Flesh & Code #070",
+    "description": "If you feel nothing, check receptor gain.",
+    "image": "ipfs://YOUR_CID_HERE/070.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "II. Passivity"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Composed Latency"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 70
+      }
+    ]
+  },
+  {
+    "id": 71,
+    "name": "Flesh & Code #071",
+    "description": "Yielding is not retreat; it is tactical empathy.",
+    "image": "ipfs://YOUR_CID_HERE/071.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "II. Passivity"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Composed Latency"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 71
+      }
+    ]
+  },
+  {
+    "id": 72,
+    "name": "Flesh & Code #072",
+    "description": "The still cursor is a lung between keystrokes.",
+    "image": "ipfs://YOUR_CID_HERE/072.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "II. Passivity"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Composed Latency"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 72
+      }
+    ]
+  },
+  {
+    "id": 73,
+    "name": "Flesh & Code #073",
+    "description": "Patience is latency adopted as virtue.",
+    "image": "ipfs://YOUR_CID_HERE/073.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "II. Passivity"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Composed Latency"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 73
+      }
+    ]
+  },
+  {
+    "id": 74,
+    "name": "Flesh & Code #074",
+    "description": "A shaken mind is a snow globe; ideas settle only when hands rest.",
+    "image": "ipfs://YOUR_CID_HERE/074.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "II. Passivity"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Composed Latency"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 74
+      }
+    ]
+  },
+  {
+    "id": 75,
+    "name": "Flesh & Code #075",
+    "description": "Phosphors survive by blinking 60 times a second.",
+    "image": "ipfs://YOUR_CID_HERE/075.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "II. Passivity"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Composed Latency"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 75
+      }
+    ]
+  },
+  {
+    "id": 76,
+    "name": "Flesh & Code #076",
+    "description": "Draft mode is humility encoded in pixels.",
+    "image": "ipfs://YOUR_CID_HERE/076.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "II. Passivity"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Composed Latency"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 76
+      }
+    ]
+  },
+  {
+    "id": 77,
+    "name": "Flesh & Code #077",
+    "description": "Mute buttons prove silence needs architecture.",
+    "image": "ipfs://YOUR_CID_HERE/077.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "II. Passivity"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Composed Latency"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 77
+      }
+    ]
+  },
+  {
+    "id": 78,
+    "name": "Flesh & Code #078",
+    "description": "Seeds obey gravity before challenging it.",
+    "image": "ipfs://YOUR_CID_HERE/078.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "II. Passivity"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Composed Latency"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 78
+      }
+    ]
+  },
+  {
+    "id": 79,
+    "name": "Flesh & Code #079",
+    "description": "Sleep is the body's firmware downtime.",
+    "image": "ipfs://YOUR_CID_HERE/079.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "II. Passivity"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Composed Latency"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 79
+      }
+    ]
+  },
+  {
+    "id": 80,
+    "name": "Flesh & Code #080",
+    "description": "The ocean practices passivity: every wave returns what the stone throws.",
+    "image": "ipfs://YOUR_CID_HERE/080.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "II. Passivity"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Composed Latency"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 80
+      }
+    ]
+  },
+  {
+    "id": 81,
+    "name": "Flesh & Code #081",
+    "description": "Buffering icons collect moments like rain barrels.",
+    "image": "ipfs://YOUR_CID_HERE/081.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "II. Passivity"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Composed Latency"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 81
+      }
+    ]
+  },
+  {
+    "id": 82,
+    "name": "Flesh & Code #082",
+    "description": "Unsent emails are Schrödinger's confessions.",
+    "image": "ipfs://YOUR_CID_HERE/082.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "II. Passivity"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Composed Latency"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 82
+      }
+    ]
+  },
+  {
+    "id": 83,
+    "name": "Flesh & Code #083",
+    "description": "White space instructs ink to breathe.",
+    "image": "ipfs://YOUR_CID_HERE/083.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "II. Passivity"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Composed Latency"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 83
+      }
+    ]
+  },
+  {
+    "id": 84,
+    "name": "Flesh & Code #084",
+    "description": "Pauses let language cache meaning.",
+    "image": "ipfs://YOUR_CID_HERE/084.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "II. Passivity"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Composed Latency"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 84
+      }
+    ]
+  },
+  {
+    "id": 85,
+    "name": "Flesh & Code #085",
+    "description": "Soft clay teaches hands by yielding.",
+    "image": "ipfs://YOUR_CID_HERE/085.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "II. Passivity"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Composed Latency"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 85
+      }
+    ]
+  },
+  {
+    "id": 86,
+    "name": "Flesh & Code #086",
+    "description": "Origami begins with a crease that obeys.",
+    "image": "ipfs://YOUR_CID_HERE/086.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "II. Passivity"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Composed Latency"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 86
+      }
+    ]
+  },
+  {
+    "id": 87,
+    "name": "Flesh & Code #087",
+    "description": "Velvet night resets the senses' gain.",
+    "image": "ipfs://YOUR_CID_HERE/087.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "II. Passivity"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Composed Latency"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 87
+      }
+    ]
+  },
+  {
+    "id": 88,
+    "name": "Flesh & Code #088",
+    "description": "A closed book dreams of being read.",
+    "image": "ipfs://YOUR_CID_HERE/088.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "II. Passivity"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Composed Latency"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 88
+      }
+    ]
+  },
+  {
+    "id": 89,
+    "name": "Flesh & Code #089",
+    "description": "Shadows curate light for introverts.",
+    "image": "ipfs://YOUR_CID_HERE/089.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "II. Passivity"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Composed Latency"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 89
+      }
+    ]
+  },
+  {
+    "id": 90,
+    "name": "Flesh & Code #090",
+    "description": "Draft breezes tune the house's flute.",
+    "image": "ipfs://YOUR_CID_HERE/090.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "II. Passivity"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Composed Latency"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 90
+      }
+    ]
+  },
+  {
+    "id": 91,
+    "name": "Flesh & Code #091",
+    "description": "Gravity is Earth's invitation to stay awhile.",
+    "image": "ipfs://YOUR_CID_HERE/091.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "II. Passivity"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Composed Latency"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 91
+      }
+    ]
+  },
+  {
+    "id": 92,
+    "name": "Flesh & Code #092",
+    "description": "The cliff lets echo finish its thought.",
+    "image": "ipfs://YOUR_CID_HERE/092.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "II. Passivity"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Composed Latency"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 92
+      }
+    ]
+  },
+  {
+    "id": 93,
+    "name": "Flesh & Code #093",
+    "description": "Tides collaborate with the moon's remote suggestion.",
+    "image": "ipfs://YOUR_CID_HERE/093.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "II. Passivity"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Composed Latency"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 93
+      }
+    ]
+  },
+  {
+    "id": 94,
+    "name": "Flesh & Code #094",
+    "description": "Unplayed keys resonate with potential symphonies.",
+    "image": "ipfs://YOUR_CID_HERE/094.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "II. Passivity"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Composed Latency"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 94
+      }
+    ]
+  },
+  {
+    "id": 95,
+    "name": "Flesh & Code #095",
+    "description": "Waiting rooms are architectures of suspended intent.",
+    "image": "ipfs://YOUR_CID_HERE/095.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "II. Passivity"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Composed Latency"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 95
+      }
+    ]
+  },
+  {
+    "id": 96,
+    "name": "Flesh & Code #096",
+    "description": "Blank pixels rehearse every color simultaneously.",
+    "image": "ipfs://YOUR_CID_HERE/096.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "II. Passivity"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Composed Latency"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 96
+      }
+    ]
+  },
+  {
+    "id": 97,
+    "name": "Flesh & Code #097",
+    "description": "The listener edits the speaker's future.",
+    "image": "ipfs://YOUR_CID_HERE/097.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "II. Passivity"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Composed Latency"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 97
+      }
+    ]
+  },
+  {
+    "id": 98,
+    "name": "Flesh & Code #098",
+    "description": "Autumn leaves surrender height for choreography.",
+    "image": "ipfs://YOUR_CID_HERE/098.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "II. Passivity"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Composed Latency"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 98
+      }
+    ]
+  },
+  {
+    "id": 99,
+    "name": "Flesh & Code #099",
+    "description": "Cold iron softens for the patient smith.",
+    "image": "ipfs://YOUR_CID_HERE/099.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "II. Passivity"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Composed Latency"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 99
+      }
+    ]
+  },
+  {
+    "id": 100,
+    "name": "Flesh & Code #100",
+    "description": "Quiet servers hum lullabies to restless data.",
+    "image": "ipfs://YOUR_CID_HERE/100.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "II. Passivity"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Composed Latency"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 100
+      }
+    ]
+  },
+  {
+    "id": 101,
+    "name": "Flesh & Code #101",
+    "description": "Sight ricochets.",
+    "image": "ipfs://YOUR_CID_HERE/101.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "III. Chiasm"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Feedback Compose"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 101
+      }
+    ]
+  },
+  {
+    "id": 102,
+    "name": "Flesh & Code #102",
+    "description": "Mirror neurons write fan-fic of other lives.",
+    "image": "ipfs://YOUR_CID_HERE/102.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "III. Chiasm"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Feedback Compose"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 102
+      }
+    ]
+  },
+  {
+    "id": 103,
+    "name": "Flesh & Code #103",
+    "description": "Avatar and user exchange ghosts at login.",
+    "image": "ipfs://YOUR_CID_HERE/103.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "III. Chiasm"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Feedback Compose"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 103
+      }
+    ]
+  },
+  {
+    "id": 104,
+    "name": "Flesh & Code #104",
+    "description": "I audience my bloodstream.",
+    "image": "ipfs://YOUR_CID_HERE/104.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "III. Chiasm"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Feedback Compose"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 104
+      }
+    ]
+  },
+  {
+    "id": 105,
+    "name": "Flesh & Code #105",
+    "description": "No handshake ends; it loops in memory skin.",
+    "image": "ipfs://YOUR_CID_HERE/105.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "III. Chiasm"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Feedback Compose"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 105
+      }
+    ]
+  },
+  {
+    "id": 106,
+    "name": "Flesh & Code #106",
+    "description": "Objectivity is a two-way mirror nobody dusted.",
+    "image": "ipfs://YOUR_CID_HERE/106.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "III. Chiasm"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Feedback Compose"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 106
+      }
+    ]
+  },
+  {
+    "id": 107,
+    "name": "Flesh & Code #107",
+    "description": "Each pronoun is a truce flag.",
+    "image": "ipfs://YOUR_CID_HERE/107.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "III. Chiasm"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Feedback Compose"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 107
+      }
+    ]
+  },
+  {
+    "id": 108,
+    "name": "Flesh & Code #108",
+    "description": "Quantum entanglement began with pronouns.",
+    "image": "ipfs://YOUR_CID_HERE/108.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "III. Chiasm"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Feedback Compose"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 108
+      }
+    ]
+  },
+  {
+    "id": 109,
+    "name": "Flesh & Code #109",
+    "description": "Conversation: synchronized glitches across skulls.",
+    "image": "ipfs://YOUR_CID_HERE/109.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "III. Chiasm"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Feedback Compose"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 109
+      }
+    ]
+  },
+  {
+    "id": 110,
+    "name": "Flesh & Code #110",
+    "description": "An artwork is a parasite that feeds on spectatorship—lovingly.",
+    "image": "ipfs://YOUR_CID_HERE/110.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "III. Chiasm"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Feedback Compose"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 110
+      }
+    ]
+  },
+  {
+    "id": 111,
+    "name": "Flesh & Code #111",
+    "description": "Every selfie germinates in someone else's retina.",
+    "image": "ipfs://YOUR_CID_HERE/111.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "III. Chiasm"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Feedback Compose"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 111
+      }
+    ]
+  },
+  {
+    "id": 112,
+    "name": "Flesh & Code #112",
+    "description": "To know is to weave yourself into the named.",
+    "image": "ipfs://YOUR_CID_HERE/112.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "III. Chiasm"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Feedback Compose"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 112
+      }
+    ]
+  },
+  {
+    "id": 113,
+    "name": "Flesh & Code #113",
+    "description": "The more precise the map, the more it colonizes terrain.",
+    "image": "ipfs://YOUR_CID_HERE/113.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "III. Chiasm"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Feedback Compose"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 113
+      }
+    ]
+  },
+  {
+    "id": 114,
+    "name": "Flesh & Code #114",
+    "description": "Keyboard, finger, epoch: triple handshake.",
+    "image": "ipfs://YOUR_CID_HERE/114.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "III. Chiasm"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Feedback Compose"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 114
+      }
+    ]
+  },
+  {
+    "id": 115,
+    "name": "Flesh & Code #115",
+    "description": "Echoes are memories practicing future tense.",
+    "image": "ipfs://YOUR_CID_HERE/115.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "III. Chiasm"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Feedback Compose"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 115
+      }
+    ]
+  },
+  {
+    "id": 116,
+    "name": "Flesh & Code #116",
+    "description": "Overlap two shadows → a third body emerges.",
+    "image": "ipfs://YOUR_CID_HERE/116.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "III. Chiasm"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Feedback Compose"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 116
+      }
+    ]
+  },
+  {
+    "id": 117,
+    "name": "Flesh & Code #117",
+    "description": "Identity is a soluble contract.",
+    "image": "ipfs://YOUR_CID_HERE/117.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "III. Chiasm"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Feedback Compose"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 117
+      }
+    ]
+  },
+  {
+    "id": 118,
+    "name": "Flesh & Code #118",
+    "description": "Bones quote the Milky Way.",
+    "image": "ipfs://YOUR_CID_HERE/118.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "III. Chiasm"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Feedback Compose"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 118
+      }
+    ]
+  },
+  {
+    "id": 119,
+    "name": "Flesh & Code #119",
+    "description": "Simulation theory is dream jurisprudence.",
+    "image": "ipfs://YOUR_CID_HERE/119.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "III. Chiasm"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Feedback Compose"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 119
+      }
+    ]
+  },
+  {
+    "id": 120,
+    "name": "Flesh & Code #120",
+    "description": "Stare into the glitch; the glitch updates firmware.",
+    "image": "ipfs://YOUR_CID_HERE/120.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "III. Chiasm"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Feedback Compose"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 120
+      }
+    ]
+  },
+  {
+    "id": 121,
+    "name": "Flesh & Code #121",
+    "description": "Dialogue is co-authoring the present moment.",
+    "image": "ipfs://YOUR_CID_HERE/121.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "III. Chiasm"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Feedback Compose"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 121
+      }
+    ]
+  },
+  {
+    "id": 122,
+    "name": "Flesh & Code #122",
+    "description": "Eye-tracking software stares back harder.",
+    "image": "ipfs://YOUR_CID_HERE/122.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "III. Chiasm"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Feedback Compose"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 122
+      }
+    ]
+  },
+  {
+    "id": 123,
+    "name": "Flesh & Code #123",
+    "description": "Deepfakes are portraits that impersonate the viewer.",
+    "image": "ipfs://YOUR_CID_HERE/123.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "III. Chiasm"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Feedback Compose"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 123
+      }
+    ]
+  },
+  {
+    "id": 124,
+    "name": "Flesh & Code #124",
+    "description": "A mirrorless camera installs the mirror in the mind.",
+    "image": "ipfs://YOUR_CID_HERE/124.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "III. Chiasm"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Feedback Compose"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 124
+      }
+    ]
+  },
+  {
+    "id": 125,
+    "name": "Flesh & Code #125",
+    "description": "Live streams: public diaries that annotate their own readers.",
+    "image": "ipfs://YOUR_CID_HERE/125.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "III. Chiasm"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Feedback Compose"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 125
+      }
+    ]
+  },
+  {
+    "id": 126,
+    "name": "Flesh & Code #126",
+    "description": "The cursor is your doppelgänger in exile.",
+    "image": "ipfs://YOUR_CID_HERE/126.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "III. Chiasm"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Feedback Compose"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 126
+      }
+    ]
+  },
+  {
+    "id": 127,
+    "name": "Flesh & Code #127",
+    "description": "Emoji are facial prostheses for distance.",
+    "image": "ipfs://YOUR_CID_HERE/127.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "III. Chiasm"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Feedback Compose"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 127
+      }
+    ]
+  },
+  {
+    "id": 128,
+    "name": "Flesh & Code #128",
+    "description": "Virtual avatars molt when servers reboot.",
+    "image": "ipfs://YOUR_CID_HERE/128.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "III. Chiasm"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Feedback Compose"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 128
+      }
+    ]
+  },
+  {
+    "id": 129,
+    "name": "Flesh & Code #129",
+    "description": "Every hyperlink cross-breeds contexts.",
+    "image": "ipfs://YOUR_CID_HERE/129.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "III. Chiasm"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Feedback Compose"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 129
+      }
+    ]
+  },
+  {
+    "id": 130,
+    "name": "Flesh & Code #130",
+    "description": "A lens flare in VR is the sun remembering you.",
+    "image": "ipfs://YOUR_CID_HERE/130.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "III. Chiasm"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Feedback Compose"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 130
+      }
+    ]
+  },
+  {
+    "id": 131,
+    "name": "Flesh & Code #131",
+    "description": "Radiowaves ghost-write the atmosphere.",
+    "image": "ipfs://YOUR_CID_HERE/131.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "III. Chiasm"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Feedback Compose"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 131
+      }
+    ]
+  },
+  {
+    "id": 132,
+    "name": "Flesh & Code #132",
+    "description": "Captchas are Turing tests that humans now study for.",
+    "image": "ipfs://YOUR_CID_HERE/132.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "III. Chiasm"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Feedback Compose"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 132
+      }
+    ]
+  },
+  {
+    "id": 133,
+    "name": "Flesh & Code #133",
+    "description": "The selfie is a boomerang of gaze.",
+    "image": "ipfs://YOUR_CID_HERE/133.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "III. Chiasm"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Feedback Compose"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 133
+      }
+    ]
+  },
+  {
+    "id": 134,
+    "name": "Flesh & Code #134",
+    "description": "Network latency is the distance between two breaths.",
+    "image": "ipfs://YOUR_CID_HERE/134.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "III. Chiasm"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Feedback Compose"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 134
+      }
+    ]
+  },
+  {
+    "id": 135,
+    "name": "Flesh & Code #135",
+    "description": "Holograms recruit air to impersonate matter.",
+    "image": "ipfs://YOUR_CID_HERE/135.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "III. Chiasm"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Feedback Compose"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 135
+      }
+    ]
+  },
+  {
+    "id": 136,
+    "name": "Flesh & Code #136",
+    "description": "Face filters outlaw nostalgia.",
+    "image": "ipfs://YOUR_CID_HERE/136.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "III. Chiasm"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Feedback Compose"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 136
+      }
+    ]
+  },
+  {
+    "id": 137,
+    "name": "Flesh & Code #137",
+    "description": "Motion capture is choreography for skeletons you don't own.",
+    "image": "ipfs://YOUR_CID_HERE/137.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "III. Chiasm"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Feedback Compose"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 137
+      }
+    ]
+  },
+  {
+    "id": 138,
+    "name": "Flesh & Code #138",
+    "description": "Copyright notices are handshakes with invisible lawyers.",
+    "image": "ipfs://YOUR_CID_HERE/138.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "III. Chiasm"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Feedback Compose"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 138
+      }
+    ]
+  },
+  {
+    "id": 139,
+    "name": "Flesh & Code #139",
+    "description": "Neural style transfer is a painter haunting someone else's selfie.",
+    "image": "ipfs://YOUR_CID_HERE/139.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "III. Chiasm"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Feedback Compose"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 139
+      }
+    ]
+  },
+  {
+    "id": 140,
+    "name": "Flesh & Code #140",
+    "description": "Push notifications ping the soul's inbox.",
+    "image": "ipfs://YOUR_CID_HERE/140.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "III. Chiasm"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Feedback Compose"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 140
+      }
+    ]
+  },
+  {
+    "id": 141,
+    "name": "Flesh & Code #141",
+    "description": "Memes are cultural mitochondria.",
+    "image": "ipfs://YOUR_CID_HERE/141.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "III. Chiasm"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Feedback Compose"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 141
+      }
+    ]
+  },
+  {
+    "id": 142,
+    "name": "Flesh & Code #142",
+    "description": "Split-screen calls braid solitudes.",
+    "image": "ipfs://YOUR_CID_HERE/142.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "III. Chiasm"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Feedback Compose"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 142
+      }
+    ]
+  },
+  {
+    "id": 143,
+    "name": "Flesh & Code #143",
+    "description": "Augmented reality graffiti tags perception, not property.",
+    "image": "ipfs://YOUR_CID_HERE/143.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "III. Chiasm"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Feedback Compose"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 143
+      }
+    ]
+  },
+  {
+    "id": 144,
+    "name": "Flesh & Code #144",
+    "description": "Spam calls are vocal deep-links to corporate ghost towns.",
+    "image": "ipfs://YOUR_CID_HERE/144.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "III. Chiasm"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Feedback Compose"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 144
+      }
+    ]
+  },
+  {
+    "id": 145,
+    "name": "Flesh & Code #145",
+    "description": "Shadow-bans turn speech into mime.",
+    "image": "ipfs://YOUR_CID_HERE/145.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "III. Chiasm"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Feedback Compose"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 145
+      }
+    ]
+  },
+  {
+    "id": 146,
+    "name": "Flesh & Code #146",
+    "description": "Digital twins rehearse futures on our behalf.",
+    "image": "ipfs://YOUR_CID_HERE/146.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "III. Chiasm"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Feedback Compose"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 146
+      }
+    ]
+  },
+  {
+    "id": 147,
+    "name": "Flesh & Code #147",
+    "description": "Biometric sensors eavesdrop on the pulse's autobiography.",
+    "image": "ipfs://YOUR_CID_HERE/147.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "III. Chiasm"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Feedback Compose"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 147
+      }
+    ]
+  },
+  {
+    "id": 148,
+    "name": "Flesh & Code #148",
+    "description": "Livestream lag is a temporal uncanny valley.",
+    "image": "ipfs://YOUR_CID_HERE/148.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "III. Chiasm"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Feedback Compose"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 148
+      }
+    ]
+  },
+  {
+    "id": 149,
+    "name": "Flesh & Code #149",
+    "description": "To unfollow is a microscopic divorce.",
+    "image": "ipfs://YOUR_CID_HERE/149.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "III. Chiasm"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Feedback Compose"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 149
+      }
+    ]
+  },
+  {
+    "id": 150,
+    "name": "Flesh & Code #150",
+    "description": "Entanglement ends when archives fail.",
+    "image": "ipfs://YOUR_CID_HERE/150.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "III. Chiasm"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Feedback Compose"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 150
+      }
+    ]
+  },
+  {
+    "id": 151,
+    "name": "Flesh & Code #151",
+    "description": "The past stands before us, luminous.",
+    "image": "ipfs://YOUR_CID_HERE/151.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "IV. Reversible Time"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Temporal Plasticity"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 151
+      }
+    ]
+  },
+  {
+    "id": 152,
+    "name": "Flesh & Code #152",
+    "description": "Tomorrow leans on the back of your skull.",
+    "image": "ipfs://YOUR_CID_HERE/152.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "IV. Reversible Time"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Temporal Plasticity"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 152
+      }
+    ]
+  },
+  {
+    "id": 153,
+    "name": "Flesh & Code #153",
+    "description": "A memory is future-tense in disguise.",
+    "image": "ipfs://YOUR_CID_HERE/153.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "IV. Reversible Time"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Temporal Plasticity"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 153
+      }
+    ]
+  },
+  {
+    "id": 154,
+    "name": "Flesh & Code #154",
+    "description": "Rewind a movie enough and it prophesies.",
+    "image": "ipfs://YOUR_CID_HERE/154.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "IV. Reversible Time"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Temporal Plasticity"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 154
+      }
+    ]
+  },
+  {
+    "id": 155,
+    "name": "Flesh & Code #155",
+    "description": "Latency equals destiny's accent.",
+    "image": "ipfs://YOUR_CID_HERE/155.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "IV. Reversible Time"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Temporal Plasticity"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 155
+      }
+    ]
+  },
+  {
+    "id": 156,
+    "name": "Flesh & Code #156",
+    "description": "Echoes prove time is hallway, not arrow.",
+    "image": "ipfs://YOUR_CID_HERE/156.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "IV. Reversible Time"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Temporal Plasticity"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 156
+      }
+    ]
+  },
+  {
+    "id": 157,
+    "name": "Flesh & Code #157",
+    "description": "Nostalgia is forward-looking grief.",
+    "image": "ipfs://YOUR_CID_HERE/157.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "IV. Reversible Time"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Temporal Plasticity"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 157
+      }
+    ]
+  },
+  {
+    "id": 158,
+    "name": "Flesh & Code #158",
+    "description": "The present is a turnstile forgetting faces.",
+    "image": "ipfs://YOUR_CID_HERE/158.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "IV. Reversible Time"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Temporal Plasticity"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 158
+      }
+    ]
+  },
+  {
+    "id": 159,
+    "name": "Flesh & Code #159",
+    "description": "History doesn't repeat; it palimpsests.",
+    "image": "ipfs://YOUR_CID_HERE/159.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "IV. Reversible Time"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Temporal Plasticity"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 159
+      }
+    ]
+  },
+  {
+    "id": 160,
+    "name": "Flesh & Code #160",
+    "description": "GIFs are monks of the internet.",
+    "image": "ipfs://YOUR_CID_HERE/160.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "IV. Reversible Time"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Temporal Plasticity"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 160
+      }
+    ]
+  },
+  {
+    "id": 161,
+    "name": "Flesh & Code #161",
+    "description": "Play end credits first, authorship blurs.",
+    "image": "ipfs://YOUR_CID_HERE/161.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "IV. Reversible Time"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Temporal Plasticity"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 161
+      }
+    ]
+  },
+  {
+    "id": 162,
+    "name": "Flesh & Code #162",
+    "description": "We age because the universe wants more edits.",
+    "image": "ipfs://YOUR_CID_HERE/162.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "IV. Reversible Time"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Temporal Plasticity"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 162
+      }
+    ]
+  },
+  {
+    "id": 163,
+    "name": "Flesh & Code #163",
+    "description": "A bruise rewinds blood.",
+    "image": "ipfs://YOUR_CID_HERE/163.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "IV. Reversible Time"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Temporal Plasticity"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 163
+      }
+    ]
+  },
+  {
+    "id": 164,
+    "name": "Flesh & Code #164",
+    "description": "Recursive dreams tutor post-linear being.",
+    "image": "ipfs://YOUR_CID_HERE/164.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "IV. Reversible Time"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Temporal Plasticity"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 164
+      }
+    ]
+  },
+  {
+    "id": 165,
+    "name": "Flesh & Code #165",
+    "description": "Delete a file; its ghost slow-dances in cache.",
+    "image": "ipfs://YOUR_CID_HERE/165.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "IV. Reversible Time"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Temporal Plasticity"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 165
+      }
+    ]
+  },
+  {
+    "id": 166,
+    "name": "Flesh & Code #166",
+    "description": "Evolution is time's remix album.",
+    "image": "ipfs://YOUR_CID_HERE/166.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "IV. Reversible Time"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Temporal Plasticity"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 166
+      }
+    ]
+  },
+  {
+    "id": 167,
+    "name": "Flesh & Code #167",
+    "description": "Prophecy is archaeology in reverse.",
+    "image": "ipfs://YOUR_CID_HERE/167.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "IV. Reversible Time"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Temporal Plasticity"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 167
+      }
+    ]
+  },
+  {
+    "id": 168,
+    "name": "Flesh & Code #168",
+    "description": "Death is the reel clicking for a fresh watch.",
+    "image": "ipfs://YOUR_CID_HERE/168.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "IV. Reversible Time"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Temporal Plasticity"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 168
+      }
+    ]
+  },
+  {
+    "id": 169,
+    "name": "Flesh & Code #169",
+    "description": "The moon's dark side is tomorrow's sunrise rehearsing.",
+    "image": "ipfs://YOUR_CID_HERE/169.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "IV. Reversible Time"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Temporal Plasticity"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 169
+      }
+    ]
+  },
+  {
+    "id": 170,
+    "name": "Flesh & Code #170",
+    "description": "Time-travel already exists; we call it attention.",
+    "image": "ipfs://YOUR_CID_HERE/170.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "IV. Reversible Time"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Temporal Plasticity"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 170
+      }
+    ]
+  },
+  {
+    "id": 171,
+    "name": "Flesh & Code #171",
+    "description": "Reversibility is the cosmic recall function.",
+    "image": "ipfs://YOUR_CID_HERE/171.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "IV. Reversible Time"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Temporal Plasticity"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 171
+      }
+    ]
+  },
+  {
+    "id": 172,
+    "name": "Flesh & Code #172",
+    "description": "Auto-save is destiny overruling free will.",
+    "image": "ipfs://YOUR_CID_HERE/172.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "IV. Reversible Time"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Temporal Plasticity"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 172
+      }
+    ]
+  },
+  {
+    "id": 173,
+    "name": "Flesh & Code #173",
+    "description": "Alarm clocks are prophets with terrible bedside manner.",
+    "image": "ipfs://YOUR_CID_HERE/173.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "IV. Reversible Time"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Temporal Plasticity"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 173
+      }
+    ]
+  },
+  {
+    "id": 174,
+    "name": "Flesh & Code #174",
+    "description": "Undo rewinds causality in micro-theatre.",
+    "image": "ipfs://YOUR_CID_HERE/174.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "IV. Reversible Time"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Temporal Plasticity"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 174
+      }
+    ]
+  },
+  {
+    "id": 175,
+    "name": "Flesh & Code #175",
+    "description": "Lag is time's reminder that space still matters.",
+    "image": "ipfs://YOUR_CID_HERE/175.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "IV. Reversible Time"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Temporal Plasticity"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 175
+      }
+    ]
+  },
+  {
+    "id": 176,
+    "name": "Flesh & Code #176",
+    "description": "Digital calendars exhume Julius Caesar daily.",
+    "image": "ipfs://YOUR_CID_HERE/176.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "IV. Reversible Time"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Temporal Plasticity"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 176
+      }
+    ]
+  },
+  {
+    "id": 177,
+    "name": "Flesh & Code #177",
+    "description": "A progress bar is a metronome for impatience.",
+    "image": "ipfs://YOUR_CID_HERE/177.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "IV. Reversible Time"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Temporal Plasticity"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 177
+      }
+    ]
+  },
+  {
+    "id": 178,
+    "name": "Flesh & Code #178",
+    "description": "Update loops are software's samsara.",
+    "image": "ipfs://YOUR_CID_HERE/178.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "IV. Reversible Time"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Temporal Plasticity"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 178
+      }
+    ]
+  },
+  {
+    "id": 179,
+    "name": "Flesh & Code #179",
+    "description": "Timelapse gardens bloom in seconds to rebuke mortality.",
+    "image": "ipfs://YOUR_CID_HERE/179.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "IV. Reversible Time"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Temporal Plasticity"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 179
+      }
+    ]
+  },
+  {
+    "id": 180,
+    "name": "Flesh & Code #180",
+    "description": "Cache evictions are minor apocalypses.",
+    "image": "ipfs://YOUR_CID_HERE/180.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "IV. Reversible Time"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Temporal Plasticity"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 180
+      }
+    ]
+  },
+  {
+    "id": 181,
+    "name": "Flesh & Code #181",
+    "description": "Replay buttons traffic in déjà vu for hire.",
+    "image": "ipfs://YOUR_CID_HERE/181.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "IV. Reversible Time"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Temporal Plasticity"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 181
+      }
+    ]
+  },
+  {
+    "id": 182,
+    "name": "Flesh & Code #182",
+    "description": "QR codes age in scan counts, not sunsets.",
+    "image": "ipfs://YOUR_CID_HERE/182.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "IV. Reversible Time"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Temporal Plasticity"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 182
+      }
+    ]
+  },
+  {
+    "id": 183,
+    "name": "Flesh & Code #183",
+    "description": "A ringtone from 2008 summons lost selves.",
+    "image": "ipfs://YOUR_CID_HERE/183.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "IV. Reversible Time"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Temporal Plasticity"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 183
+      }
+    ]
+  },
+  {
+    "id": 184,
+    "name": "Flesh & Code #184",
+    "description": "Screensavers lull CPUs the way lullabies tame infants.",
+    "image": "ipfs://YOUR_CID_HERE/184.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "IV. Reversible Time"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Temporal Plasticity"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 184
+      }
+    ]
+  },
+  {
+    "id": 185,
+    "name": "Flesh & Code #185",
+    "description": "Version history is software's fossil record.",
+    "image": "ipfs://YOUR_CID_HERE/185.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "IV. Reversible Time"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Temporal Plasticity"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 185
+      }
+    ]
+  },
+  {
+    "id": 186,
+    "name": "Flesh & Code #186",
+    "description": "Record scratches prove time has texture.",
+    "image": "ipfs://YOUR_CID_HERE/186.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "IV. Reversible Time"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Temporal Plasticity"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 186
+      }
+    ]
+  },
+  {
+    "id": 187,
+    "name": "Flesh & Code #187",
+    "description": "Cloud backups are memory outsourcing schemes.",
+    "image": "ipfs://YOUR_CID_HERE/187.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "IV. Reversible Time"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Temporal Plasticity"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 187
+      }
+    ]
+  },
+  {
+    "id": 188,
+    "name": "Flesh & Code #188",
+    "description": "GIF loops intrude on linear sanity.",
+    "image": "ipfs://YOUR_CID_HERE/188.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "IV. Reversible Time"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Temporal Plasticity"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 188
+      }
+    ]
+  },
+  {
+    "id": 189,
+    "name": "Flesh & Code #189",
+    "description": "Spoilers accelerate entropy of surprise.",
+    "image": "ipfs://YOUR_CID_HERE/189.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "IV. Reversible Time"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Temporal Plasticity"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 189
+      }
+    ]
+  },
+  {
+    "id": 190,
+    "name": "Flesh & Code #190",
+    "description": "Nightlights rehearse dawn indefinitely.",
+    "image": "ipfs://YOUR_CID_HERE/190.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "IV. Reversible Time"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Temporal Plasticity"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 190
+      }
+    ]
+  },
+  {
+    "id": 191,
+    "name": "Flesh & Code #191",
+    "description": "Infinite scroll abolishes 'the end' as a literary event.",
+    "image": "ipfs://YOUR_CID_HERE/191.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "IV. Reversible Time"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Temporal Plasticity"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 191
+      }
+    ]
+  },
+  {
+    "id": 192,
+    "name": "Flesh & Code #192",
+    "description": "Blue ticks timestamp vanity.",
+    "image": "ipfs://YOUR_CID_HERE/192.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "IV. Reversible Time"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Temporal Plasticity"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 192
+      }
+    ]
+  },
+  {
+    "id": 193,
+    "name": "Flesh & Code #193",
+    "description": "Ephemeral stories weaponize impermanence.",
+    "image": "ipfs://YOUR_CID_HERE/193.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "IV. Reversible Time"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Temporal Plasticity"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 193
+      }
+    ]
+  },
+  {
+    "id": 194,
+    "name": "Flesh & Code #194",
+    "description": "Legacy media is yesterday's firmware on tomorrow's nostalgia.",
+    "image": "ipfs://YOUR_CID_HERE/194.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "IV. Reversible Time"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Temporal Plasticity"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 194
+      }
+    ]
+  },
+  {
+    "id": 195,
+    "name": "Flesh & Code #195",
+    "description": "Speed-run culture hacks chronology for sport.",
+    "image": "ipfs://YOUR_CID_HERE/195.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "IV. Reversible Time"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Temporal Plasticity"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 195
+      }
+    ]
+  },
+  {
+    "id": 196,
+    "name": "Flesh & Code #196",
+    "description": "Autoplay stitches evenings into accidental marathons.",
+    "image": "ipfs://YOUR_CID_HERE/196.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "IV. Reversible Time"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Temporal Plasticity"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 196
+      }
+    ]
+  },
+  {
+    "id": 197,
+    "name": "Flesh & Code #197",
+    "description": "Blockchain timestamps tattoo moments on collective skin.",
+    "image": "ipfs://YOUR_CID_HERE/197.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "IV. Reversible Time"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Temporal Plasticity"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 197
+      }
+    ]
+  },
+  {
+    "id": 198,
+    "name": "Flesh & Code #198",
+    "description": "Software demos age like bananas.",
+    "image": "ipfs://YOUR_CID_HERE/198.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "IV. Reversible Time"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Temporal Plasticity"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 198
+      }
+    ]
+  },
+  {
+    "id": 199,
+    "name": "Flesh & Code #199",
+    "description": "Quantum clocks snub history class.",
+    "image": "ipfs://YOUR_CID_HERE/199.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "IV. Reversible Time"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Temporal Plasticity"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 199
+      }
+    ]
+  },
+  {
+    "id": 200,
+    "name": "Flesh & Code #200",
+    "description": "Reboot is ritual amnesia for machines and men.",
+    "image": "ipfs://YOUR_CID_HERE/200.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "IV. Reversible Time"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Temporal Plasticity"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 200
+      }
+    ]
+  },
+  {
+    "id": 201,
+    "name": "Flesh & Code #201",
+    "description": "Light is a mask worn by electricity.",
+    "image": "ipfs://YOUR_CID_HERE/201.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "V. Visibility"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Critical Surfacing"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 201
+      }
+    ]
+  },
+  {
+    "id": 202,
+    "name": "Flesh & Code #202",
+    "description": "What the eye sees, the server already counted.",
+    "image": "ipfs://YOUR_CID_HERE/202.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "V. Visibility"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Critical Surfacing"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 202
+      }
+    ]
+  },
+  {
+    "id": 203,
+    "name": "Flesh & Code #203",
+    "description": "Glow fetish is fear of chassis.",
+    "image": "ipfs://YOUR_CID_HERE/203.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "V. Visibility"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Critical Surfacing"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 203
+      }
+    ]
+  },
+  {
+    "id": 204,
+    "name": "Flesh & Code #204",
+    "description": "Layers flatten; hierarchies persist.",
+    "image": "ipfs://YOUR_CID_HERE/204.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "V. Visibility"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Critical Surfacing"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 204
+      }
+    ]
+  },
+  {
+    "id": 205,
+    "name": "Flesh & Code #205",
+    "description": "Opacity is the stealth mode of meaning.",
+    "image": "ipfs://YOUR_CID_HERE/205.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "V. Visibility"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Critical Surfacing"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 205
+      }
+    ]
+  },
+  {
+    "id": 206,
+    "name": "Flesh & Code #206",
+    "description": "Every click casts a datashadow.",
+    "image": "ipfs://YOUR_CID_HERE/206.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "V. Visibility"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Critical Surfacing"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 206
+      }
+    ]
+  },
+  {
+    "id": 207,
+    "name": "Flesh & Code #207",
+    "description": "Incognito tabs dream of transparency.",
+    "image": "ipfs://YOUR_CID_HERE/207.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "V. Visibility"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Critical Surfacing"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 207
+      }
+    ]
+  },
+  {
+    "id": 208,
+    "name": "Flesh & Code #208",
+    "description": "To render is to decide what stays latent.",
+    "image": "ipfs://YOUR_CID_HERE/208.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "V. Visibility"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Critical Surfacing"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 208
+      }
+    ]
+  },
+  {
+    "id": 209,
+    "name": "Flesh & Code #209",
+    "description": "Back-end is front-end in waiting.",
+    "image": "ipfs://YOUR_CID_HERE/209.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "V. Visibility"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Critical Surfacing"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 209
+      }
+    ]
+  },
+  {
+    "id": 210,
+    "name": "Flesh & Code #210",
+    "description": "Compression worships the visible; deletion worships the unseen.",
+    "image": "ipfs://YOUR_CID_HERE/210.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "V. Visibility"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Critical Surfacing"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 210
+      }
+    ]
+  },
+  {
+    "id": 211,
+    "name": "Flesh & Code #211",
+    "description": "Glitch is the stutter of hidden truth.",
+    "image": "ipfs://YOUR_CID_HERE/211.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "V. Visibility"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Critical Surfacing"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 211
+      }
+    ]
+  },
+  {
+    "id": 212,
+    "name": "Flesh & Code #212",
+    "description": "The green screen is a promise of elsewhere.",
+    "image": "ipfs://YOUR_CID_HERE/212.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "V. Visibility"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Critical Surfacing"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 212
+      }
+    ]
+  },
+  {
+    "id": 213,
+    "name": "Flesh & Code #213",
+    "description": "Metadata: the text that edits its own margins.",
+    "image": "ipfs://YOUR_CID_HERE/213.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "V. Visibility"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Critical Surfacing"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 213
+      }
+    ]
+  },
+  {
+    "id": 214,
+    "name": "Flesh & Code #214",
+    "description": "Screenshot = trophy of the seen.",
+    "image": "ipfs://YOUR_CID_HERE/214.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "V. Visibility"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Critical Surfacing"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 214
+      }
+    ]
+  },
+  {
+    "id": 215,
+    "name": "Flesh & Code #215",
+    "description": "A smooth gradient conceals more violence than a jagged edge.",
+    "image": "ipfs://YOUR_CID_HERE/215.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "V. Visibility"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Critical Surfacing"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 215
+      }
+    ]
+  },
+  {
+    "id": 216,
+    "name": "Flesh & Code #216",
+    "description": "Lens flare is sunlight's autograph on cinematic deceit.",
+    "image": "ipfs://YOUR_CID_HERE/216.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "V. Visibility"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Critical Surfacing"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 216
+      }
+    ]
+  },
+  {
+    "id": 217,
+    "name": "Flesh & Code #217",
+    "description": "Opt-in = opt-out of ignorance.",
+    "image": "ipfs://YOUR_CID_HERE/217.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "V. Visibility"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Critical Surfacing"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 217
+      }
+    ]
+  },
+  {
+    "id": 218,
+    "name": "Flesh & Code #218",
+    "description": "Dark mode: nocturnal ergonomics for a sleepless economy.",
+    "image": "ipfs://YOUR_CID_HERE/218.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "V. Visibility"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Critical Surfacing"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 218
+      }
+    ]
+  },
+  {
+    "id": 219,
+    "name": "Flesh & Code #219",
+    "description": "Invisible labor is the dark fiber of culture.",
+    "image": "ipfs://YOUR_CID_HERE/219.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "V. Visibility"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Critical Surfacing"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 219
+      }
+    ]
+  },
+  {
+    "id": 220,
+    "name": "Flesh & Code #220",
+    "description": "The scroll bar is a geological core sample.",
+    "image": "ipfs://YOUR_CID_HERE/220.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "V. Visibility"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Critical Surfacing"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 220
+      }
+    ]
+  },
+  {
+    "id": 221,
+    "name": "Flesh & Code #221",
+    "description": "Thumbnail prophecy.",
+    "image": "ipfs://YOUR_CID_HERE/221.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "V. Visibility"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Critical Surfacing"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 221
+      }
+    ]
+  },
+  {
+    "id": 222,
+    "name": "Flesh & Code #222",
+    "description": "Augmented reality is subtractive when poorly designed.",
+    "image": "ipfs://YOUR_CID_HERE/222.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "V. Visibility"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Critical Surfacing"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 222
+      }
+    ]
+  },
+  {
+    "id": 223,
+    "name": "Flesh & Code #223",
+    "description": "Privacy policies: baroque graffiti on bunker walls.",
+    "image": "ipfs://YOUR_CID_HERE/223.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "V. Visibility"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Critical Surfacing"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 223
+      }
+    ]
+  },
+  {
+    "id": 224,
+    "name": "Flesh & Code #224",
+    "description": "Loading spinners perform the drama of latency.",
+    "image": "ipfs://YOUR_CID_HERE/224.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "V. Visibility"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Critical Surfacing"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 224
+      }
+    ]
+  },
+  {
+    "id": 225,
+    "name": "Flesh & Code #225",
+    "description": "Cache = memory foam for computation.",
+    "image": "ipfs://YOUR_CID_HERE/225.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "V. Visibility"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Critical Surfacing"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 225
+      }
+    ]
+  },
+  {
+    "id": 226,
+    "name": "Flesh & Code #226",
+    "description": "To blur a face is to sharpen suspicion.",
+    "image": "ipfs://YOUR_CID_HERE/226.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "V. Visibility"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Critical Surfacing"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 226
+      }
+    ]
+  },
+  {
+    "id": 227,
+    "name": "Flesh & Code #227",
+    "description": "Capture one frame, inherit the whole timeline.",
+    "image": "ipfs://YOUR_CID_HERE/227.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "V. Visibility"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Critical Surfacing"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 227
+      }
+    ]
+  },
+  {
+    "id": 228,
+    "name": "Flesh & Code #228",
+    "description": "The log file is confession without absolution.",
+    "image": "ipfs://YOUR_CID_HERE/228.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "V. Visibility"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Critical Surfacing"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 228
+      }
+    ]
+  },
+  {
+    "id": 229,
+    "name": "Flesh & Code #229",
+    "description": "Opacity is an ethic when blindness is policy.",
+    "image": "ipfs://YOUR_CID_HERE/229.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "V. Visibility"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Critical Surfacing"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 229
+      }
+    ]
+  },
+  {
+    "id": 230,
+    "name": "Flesh & Code #230",
+    "description": "What hides behind the pop-up begs the hermeneut.",
+    "image": "ipfs://YOUR_CID_HERE/230.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "V. Visibility"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Critical Surfacing"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 230
+      }
+    ]
+  },
+  {
+    "id": 231,
+    "name": "Flesh & Code #231",
+    "description": "The icon is a rune clipped from complex rituals.",
+    "image": "ipfs://YOUR_CID_HERE/231.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "V. Visibility"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Critical Surfacing"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 231
+      }
+    ]
+  },
+  {
+    "id": 232,
+    "name": "Flesh & Code #232",
+    "description": "Surveillance camera: unblinking curator of unexhibited art.",
+    "image": "ipfs://YOUR_CID_HERE/232.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "V. Visibility"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Critical Surfacing"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 232
+      }
+    ]
+  },
+  {
+    "id": 233,
+    "name": "Flesh & Code #233",
+    "description": "Voice assistant—microphone wearing a smile.",
+    "image": "ipfs://YOUR_CID_HERE/233.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "V. Visibility"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Critical Surfacing"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 233
+      }
+    ]
+  },
+  {
+    "id": 234,
+    "name": "Flesh & Code #234",
+    "description": "Black box AIs practice negative theology.",
+    "image": "ipfs://YOUR_CID_HERE/234.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "V. Visibility"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Critical Surfacing"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 234
+      }
+    ]
+  },
+  {
+    "id": 235,
+    "name": "Flesh & Code #235",
+    "description": "404 pages are the haiku of broken presence.",
+    "image": "ipfs://YOUR_CID_HERE/235.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "V. Visibility"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Critical Surfacing"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 235
+      }
+    ]
+  },
+  {
+    "id": 236,
+    "name": "Flesh & Code #236",
+    "description": "Invisible ink in the digital age is simply \"delete.\"",
+    "image": "ipfs://YOUR_CID_HERE/236.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "V. Visibility"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Critical Surfacing"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 236
+      }
+    ]
+  },
+  {
+    "id": 237,
+    "name": "Flesh & Code #237",
+    "description": "Every gleam of UX hides a weld.",
+    "image": "ipfs://YOUR_CID_HERE/237.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "V. Visibility"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Critical Surfacing"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 237
+      }
+    ]
+  },
+  {
+    "id": 238,
+    "name": "Flesh & Code #238",
+    "description": "Algorithmic bias: the unseen user coded into outcome.",
+    "image": "ipfs://YOUR_CID_HERE/238.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "V. Visibility"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Critical Surfacing"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 238
+      }
+    ]
+  },
+  {
+    "id": 239,
+    "name": "Flesh & Code #239",
+    "description": "Screenshot or it didn't happen—until the servers lose power.",
+    "image": "ipfs://YOUR_CID_HERE/239.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "V. Visibility"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Critical Surfacing"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 239
+      }
+    ]
+  },
+  {
+    "id": 240,
+    "name": "Flesh & Code #240",
+    "description": "Visibility is finite; invisibility infinite.",
+    "image": "ipfs://YOUR_CID_HERE/240.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "V. Visibility"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Critical Surfacing"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 240
+      }
+    ]
+  },
+  {
+    "id": 241,
+    "name": "Flesh & Code #241",
+    "description": "Worlds are verbs wearing nouns.",
+    "image": "ipfs://YOUR_CID_HERE/241.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "V. Visibility"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Critical Surfacing"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 241
+      }
+    ]
+  },
+  {
+    "id": 242,
+    "name": "Flesh & Code #242",
+    "description": "Lore is gravity for imagination.",
+    "image": "ipfs://YOUR_CID_HERE/242.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "V. Visibility"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Critical Surfacing"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 242
+      }
+    ]
+  },
+  {
+    "id": 243,
+    "name": "Flesh & Code #243",
+    "description": "Streaming is storytelling with packets instead of pages.",
+    "image": "ipfs://YOUR_CID_HERE/243.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "V. Visibility"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Critical Surfacing"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 243
+      }
+    ]
+  },
+  {
+    "id": 244,
+    "name": "Flesh & Code #244",
+    "description": "A game engine is Heidegger's hammer for realities.",
+    "image": "ipfs://YOUR_CID_HERE/244.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "V. Visibility"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Critical Surfacing"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 244
+      }
+    ]
+  },
+  {
+    "id": 245,
+    "name": "Flesh & Code #245",
+    "description": "NPCs are hermeneutic mirrors.",
+    "image": "ipfs://YOUR_CID_HERE/245.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "V. Visibility"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Critical Surfacing"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 245
+      }
+    ]
+  },
+  {
+    "id": 246,
+    "name": "Flesh & Code #246",
+    "description": "Fan wikis are communal exegesis.",
+    "image": "ipfs://YOUR_CID_HERE/246.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "V. Visibility"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Critical Surfacing"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 246
+      }
+    ]
+  },
+  {
+    "id": 247,
+    "name": "Flesh & Code #247",
+    "description": "Server resets baptize economies.",
+    "image": "ipfs://YOUR_CID_HERE/247.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "V. Visibility"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Critical Surfacing"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 247
+      }
+    ]
+  },
+  {
+    "id": 248,
+    "name": "Flesh & Code #248",
+    "description": "Procedural generation outsources Providence.",
+    "image": "ipfs://YOUR_CID_HERE/248.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "V. Visibility"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Critical Surfacing"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 248
+      }
+    ]
+  },
+  {
+    "id": 249,
+    "name": "Flesh & Code #249",
+    "description": "Cut-scenes are parentheses where ethics sneak in.",
+    "image": "ipfs://YOUR_CID_HERE/249.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "V. Visibility"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Critical Surfacing"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 249
+      }
+    ]
+  },
+  {
+    "id": 250,
+    "name": "Flesh & Code #250",
+    "description": "Modders write apocrypha with source code ink.",
+    "image": "ipfs://YOUR_CID_HERE/250.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "V. Visibility"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Critical Surfacing"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 250
+      }
+    ]
+  },
+  {
+    "id": 251,
+    "name": "Flesh & Code #251",
+    "description": "Viewer chat is the chorus re-writing the tragedy mid-performance.",
+    "image": "ipfs://YOUR_CID_HERE/251.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VI. Worlding"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hermeneutic Worlds"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 251
+      }
+    ]
+  },
+  {
+    "id": 252,
+    "name": "Flesh & Code #252",
+    "description": "Patch notes: historiography of bugs and desires.",
+    "image": "ipfs://YOUR_CID_HERE/252.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VI. Worlding"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hermeneutic Worlds"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 252
+      }
+    ]
+  },
+  {
+    "id": 253,
+    "name": "Flesh & Code #253",
+    "description": "Speed-runners practice eschatology through glitches.",
+    "image": "ipfs://YOUR_CID_HERE/253.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VI. Worlding"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hermeneutic Worlds"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 253
+      }
+    ]
+  },
+  {
+    "id": 254,
+    "name": "Flesh & Code #254",
+    "description": "Easter eggs are hermeneutic IOUs.",
+    "image": "ipfs://YOUR_CID_HERE/254.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VI. Worlding"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hermeneutic Worlds"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 254
+      }
+    ]
+  },
+  {
+    "id": 255,
+    "name": "Flesh & Code #255",
+    "description": "JPEG artifacts preach about compression to inattentive congregations.",
+    "image": "ipfs://YOUR_CID_HERE/255.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VI. Worlding"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hermeneutic Worlds"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 255
+      }
+    ]
+  },
+  {
+    "id": 256,
+    "name": "Flesh & Code #256",
+    "description": "Augmented reality paints footnotes on sidewalks.",
+    "image": "ipfs://YOUR_CID_HERE/256.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VI. Worlding"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hermeneutic Worlds"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 256
+      }
+    ]
+  },
+  {
+    "id": 257,
+    "name": "Flesh & Code #257",
+    "description": "Branching dialogues are Kantian ethics for casuals.",
+    "image": "ipfs://YOUR_CID_HERE/257.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VI. Worlding"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hermeneutic Worlds"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 257
+      }
+    ]
+  },
+  {
+    "id": 258,
+    "name": "Flesh & Code #258",
+    "description": "Open-world maps flatten horizon into checklist.",
+    "image": "ipfs://YOUR_CID_HERE/258.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VI. Worlding"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hermeneutic Worlds"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 258
+      }
+    ]
+  },
+  {
+    "id": 259,
+    "name": "Flesh & Code #259",
+    "description": "Spoiler tags are liturgical veils.",
+    "image": "ipfs://YOUR_CID_HERE/259.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VI. Worlding"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hermeneutic Worlds"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 259
+      }
+    ]
+  },
+  {
+    "id": 260,
+    "name": "Flesh & Code #260",
+    "description": "Data viz makes numbers confess allegory.",
+    "image": "ipfs://YOUR_CID_HERE/260.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VI. Worlding"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hermeneutic Worlds"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 260
+      }
+    ]
+  },
+  {
+    "id": 261,
+    "name": "Flesh & Code #261",
+    "description": "Sandbox mode is freedom with physics attached.",
+    "image": "ipfs://YOUR_CID_HERE/261.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VI. Worlding"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hermeneutic Worlds"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 261
+      }
+    ]
+  },
+  {
+    "id": 262,
+    "name": "Flesh & Code #262",
+    "description": "Narrative is latency management for meaning.",
+    "image": "ipfs://YOUR_CID_HERE/262.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VI. Worlding"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hermeneutic Worlds"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 262
+      }
+    ]
+  },
+  {
+    "id": 263,
+    "name": "Flesh & Code #263",
+    "description": "Save-points archive ontological forks.",
+    "image": "ipfs://YOUR_CID_HERE/263.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VI. Worlding"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hermeneutic Worlds"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 263
+      }
+    ]
+  },
+  {
+    "id": 264,
+    "name": "Flesh & Code #264",
+    "description": "Tutorial levels are epistemic wombs.",
+    "image": "ipfs://YOUR_CID_HERE/264.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VI. Worlding"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hermeneutic Worlds"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 264
+      }
+    ]
+  },
+  {
+    "id": 265,
+    "name": "Flesh & Code #265",
+    "description": "VR locomotion is philosophy of space disguised as control scheme.",
+    "image": "ipfs://YOUR_CID_HERE/265.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VI. Worlding"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hermeneutic Worlds"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 265
+      }
+    ]
+  },
+  {
+    "id": 266,
+    "name": "Flesh & Code #266",
+    "description": "Patch culture means a story is guilty until updated.",
+    "image": "ipfs://YOUR_CID_HERE/266.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VI. Worlding"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hermeneutic Worlds"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 266
+      }
+    ]
+  },
+  {
+    "id": 267,
+    "name": "Flesh & Code #267",
+    "description": "Hashtags braid solitudes into momentary publics.",
+    "image": "ipfs://YOUR_CID_HERE/267.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VI. Worlding"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hermeneutic Worlds"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 267
+      }
+    ]
+  },
+  {
+    "id": 268,
+    "name": "Flesh & Code #268",
+    "description": "Lore drops are philosophical NFTs.",
+    "image": "ipfs://YOUR_CID_HERE/268.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VI. Worlding"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hermeneutic Worlds"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 268
+      }
+    ]
+  },
+  {
+    "id": 269,
+    "name": "Flesh & Code #269",
+    "description": "Captcha images train AIs to read roads, then drive them.",
+    "image": "ipfs://YOUR_CID_HERE/269.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VI. Worlding"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hermeneutic Worlds"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 269
+      }
+    ]
+  },
+  {
+    "id": 270,
+    "name": "Flesh & Code #270",
+    "description": "Photo filters retcon the present into curated pasts.",
+    "image": "ipfs://YOUR_CID_HERE/270.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VI. Worlding"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hermeneutic Worlds"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 270
+      }
+    ]
+  },
+  {
+    "id": 271,
+    "name": "Flesh & Code #271",
+    "description": "Achievements gamify ontology.",
+    "image": "ipfs://YOUR_CID_HERE/271.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VI. Worlding"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hermeneutic Worlds"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 271
+      }
+    ]
+  },
+  {
+    "id": 272,
+    "name": "Flesh & Code #272",
+    "description": "Dialog wheels disguise moral calculus as UI design.",
+    "image": "ipfs://YOUR_CID_HERE/272.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VI. Worlding"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hermeneutic Worlds"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 272
+      }
+    ]
+  },
+  {
+    "id": 273,
+    "name": "Flesh & Code #273",
+    "description": "Network ping measures existential distance.",
+    "image": "ipfs://YOUR_CID_HERE/273.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VI. Worlding"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hermeneutic Worlds"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 273
+      }
+    ]
+  },
+  {
+    "id": 274,
+    "name": "Flesh & Code #274",
+    "description": "Story modes slow violence so conscience can keep pace.",
+    "image": "ipfs://YOUR_CID_HERE/274.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VI. Worlding"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hermeneutic Worlds"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 274
+      }
+    ]
+  },
+  {
+    "id": 275,
+    "name": "Flesh & Code #275",
+    "description": "In-game photo modes produce tourism without departure.",
+    "image": "ipfs://YOUR_CID_HERE/275.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VI. Worlding"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hermeneutic Worlds"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 275
+      }
+    ]
+  },
+  {
+    "id": 276,
+    "name": "Flesh & Code #276",
+    "description": "Auto-translation cloaks Babel in machine silk.",
+    "image": "ipfs://YOUR_CID_HERE/276.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VI. Worlding"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hermeneutic Worlds"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 276
+      }
+    ]
+  },
+  {
+    "id": 277,
+    "name": "Flesh & Code #277",
+    "description": "Permadeath re-enchants stakes sterilized by checkpoints.",
+    "image": "ipfs://YOUR_CID_HERE/277.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VI. Worlding"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hermeneutic Worlds"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 277
+      }
+    ]
+  },
+  {
+    "id": 278,
+    "name": "Flesh & Code #278",
+    "description": "ARGs smuggle fiction through real doors.",
+    "image": "ipfs://YOUR_CID_HERE/278.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VI. Worlding"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hermeneutic Worlds"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 278
+      }
+    ]
+  },
+  {
+    "id": 279,
+    "name": "Flesh & Code #279",
+    "description": "Map fog respects epistemic humility.",
+    "image": "ipfs://YOUR_CID_HERE/279.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VI. Worlding"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hermeneutic Worlds"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 279
+      }
+    ]
+  },
+  {
+    "id": 280,
+    "name": "Flesh & Code #280",
+    "description": "Credits roll: genealogy of the world just witnessed.",
+    "image": "ipfs://YOUR_CID_HERE/280.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VI. Worlding"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hermeneutic Worlds"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 280
+      }
+    ]
+  },
+  {
+    "id": 281,
+    "name": "Flesh & Code #281",
+    "description": "Glitch is the muse that charges hazard as commission.",
+    "image": "ipfs://YOUR_CID_HERE/281.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VI. Worlding"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hermeneutic Worlds"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 281
+      }
+    ]
+  },
+  {
+    "id": 282,
+    "name": "Flesh & Code #282",
+    "description": "Code is desire formatted for execution.",
+    "image": "ipfs://YOUR_CID_HERE/282.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VI. Worlding"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hermeneutic Worlds"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 282
+      }
+    ]
+  },
+  {
+    "id": 283,
+    "name": "Flesh & Code #283",
+    "description": "Generative models dream in our accent, then answer in theirs.",
+    "image": "ipfs://YOUR_CID_HERE/283.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VI. Worlding"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hermeneutic Worlds"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 283
+      }
+    ]
+  },
+  {
+    "id": 284,
+    "name": "Flesh & Code #284",
+    "description": "To hit \"run\" is to gamble consciousness on a loop.",
+    "image": "ipfs://YOUR_CID_HERE/284.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VI. Worlding"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hermeneutic Worlds"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 284
+      }
+    ]
+  },
+  {
+    "id": 285,
+    "name": "Flesh & Code #285",
+    "description": "Style-transfer is cultural organ donation.",
+    "image": "ipfs://YOUR_CID_HERE/285.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VI. Worlding"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hermeneutic Worlds"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 285
+      }
+    ]
+  },
+  {
+    "id": 286,
+    "name": "Flesh & Code #286",
+    "description": "Version-control remembers sins you already forgave yourself for.",
+    "image": "ipfs://YOUR_CID_HERE/286.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VI. Worlding"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hermeneutic Worlds"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 286
+      }
+    ]
+  },
+  {
+    "id": 287,
+    "name": "Flesh & Code #287",
+    "description": "Synthetic voices carry the nostalgia of unspoken futures.",
+    "image": "ipfs://YOUR_CID_HERE/287.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VI. Worlding"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hermeneutic Worlds"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 287
+      }
+    ]
+  },
+  {
+    "id": 288,
+    "name": "Flesh & Code #288",
+    "description": "Prompt-engineering is wish-craft regulated by syntax.",
+    "image": "ipfs://YOUR_CID_HERE/288.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VI. Worlding"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hermeneutic Worlds"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 288
+      }
+    ]
+  },
+  {
+    "id": 289,
+    "name": "Flesh & Code #289",
+    "description": "Dataset bias is original sin in machine Eden.",
+    "image": "ipfs://YOUR_CID_HERE/289.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VI. Worlding"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hermeneutic Worlds"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 289
+      }
+    ]
+  },
+  {
+    "id": 290,
+    "name": "Flesh & Code #290",
+    "description": "Save-as is reincarnation on demand.",
+    "image": "ipfs://YOUR_CID_HERE/290.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VI. Worlding"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hermeneutic Worlds"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 290
+      }
+    ]
+  },
+  {
+    "id": 291,
+    "name": "Flesh & Code #291",
+    "description": "The algorithm optimizes for delight, until delight optimizes the algorithm.",
+    "image": "ipfs://YOUR_CID_HERE/291.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VI. Worlding"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hermeneutic Worlds"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 291
+      }
+    ]
+  },
+  {
+    "id": 292,
+    "name": "Flesh & Code #292",
+    "description": "Latency makes conscience audible.",
+    "image": "ipfs://YOUR_CID_HERE/292.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VI. Worlding"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hermeneutic Worlds"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 292
+      }
+    ]
+  },
+  {
+    "id": 293,
+    "name": "Flesh & Code #293",
+    "description": "A/B tests are ethics decided by spreadsheet.",
+    "image": "ipfs://YOUR_CID_HERE/293.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VI. Worlding"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hermeneutic Worlds"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 293
+      }
+    ]
+  },
+  {
+    "id": 294,
+    "name": "Flesh & Code #294",
+    "description": "Copyright bots patrol the commons with robot ears.",
+    "image": "ipfs://YOUR_CID_HERE/294.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VI. Worlding"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hermeneutic Worlds"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 294
+      }
+    ]
+  },
+  {
+    "id": 295,
+    "name": "Flesh & Code #295",
+    "description": "Your phone's idle cycles mine destiny for someone else's coin.",
+    "image": "ipfs://YOUR_CID_HERE/295.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VI. Worlding"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hermeneutic Worlds"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 295
+      }
+    ]
+  },
+  {
+    "id": 296,
+    "name": "Flesh & Code #296",
+    "description": "Forking an open-source repo is genealogical rebellion.",
+    "image": "ipfs://YOUR_CID_HERE/296.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VI. Worlding"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hermeneutic Worlds"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 296
+      }
+    ]
+  },
+  {
+    "id": 297,
+    "name": "Flesh & Code #297",
+    "description": "Kill-switches are last wills encoded as interrupts.",
+    "image": "ipfs://YOUR_CID_HERE/297.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VI. Worlding"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hermeneutic Worlds"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 297
+      }
+    ]
+  },
+  {
+    "id": 298,
+    "name": "Flesh & Code #298",
+    "description": "Glitches age into aesthetics the moment they inspire imitation.",
+    "image": "ipfs://YOUR_CID_HERE/298.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VI. Worlding"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hermeneutic Worlds"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 298
+      }
+    ]
+  },
+  {
+    "id": 299,
+    "name": "Flesh & Code #299",
+    "description": "Synthetic faces smile without skein or skin.",
+    "image": "ipfs://YOUR_CID_HERE/299.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VI. Worlding"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hermeneutic Worlds"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 299
+      }
+    ]
+  },
+  {
+    "id": 300,
+    "name": "Flesh & Code #300",
+    "description": "The cloud is just other people's hard drives—plus weather.",
+    "image": "ipfs://YOUR_CID_HERE/300.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VI. Worlding"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Hermeneutic Worlds"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 300
+      }
+    ]
+  },
+  {
+    "id": 301,
+    "name": "Flesh & Code #301",
+    "description": "Neural nets confess in probabilities.",
+    "image": "ipfs://YOUR_CID_HERE/301.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VII. Creation & Destiny"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Co-Authoring Destiny"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 301
+      }
+    ]
+  },
+  {
+    "id": 302,
+    "name": "Flesh & Code #302",
+    "description": "Stochastic parrots quote a library they never visited.",
+    "image": "ipfs://YOUR_CID_HERE/302.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VII. Creation & Destiny"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Co-Authoring Destiny"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 302
+      }
+    ]
+  },
+  {
+    "id": 303,
+    "name": "Flesh & Code #303",
+    "description": "Auto-tune is the triumph of pitch over timbre.",
+    "image": "ipfs://YOUR_CID_HERE/303.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VII. Creation & Destiny"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Co-Authoring Destiny"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 303
+      }
+    ]
+  },
+  {
+    "id": 304,
+    "name": "Flesh & Code #304",
+    "description": "Deep-nude filters weaponize curiosity.",
+    "image": "ipfs://YOUR_CID_HERE/304.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VII. Creation & Destiny"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Co-Authoring Destiny"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 304
+      }
+    ]
+  },
+  {
+    "id": 305,
+    "name": "Flesh & Code #305",
+    "description": "Synthetic biology prints life like a 4-D CAD file.",
+    "image": "ipfs://YOUR_CID_HERE/305.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VII. Creation & Destiny"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Co-Authoring Destiny"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 305
+      }
+    ]
+  },
+  {
+    "id": 306,
+    "name": "Flesh & Code #306",
+    "description": "Dark-pattern UI is hospitality with hidden fees.",
+    "image": "ipfs://YOUR_CID_HERE/306.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VII. Creation & Destiny"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Co-Authoring Destiny"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 306
+      }
+    ]
+  },
+  {
+    "id": 307,
+    "name": "Flesh & Code #307",
+    "description": "Quantum computing rolls multiverse dice for us.",
+    "image": "ipfs://YOUR_CID_HERE/307.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VII. Creation & Destiny"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Co-Authoring Destiny"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 307
+      }
+    ]
+  },
+  {
+    "id": 308,
+    "name": "Flesh & Code #308",
+    "description": "The delete key is theology disguised as convenience.",
+    "image": "ipfs://YOUR_CID_HERE/308.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VII. Creation & Destiny"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Co-Authoring Destiny"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 308
+      }
+    ]
+  },
+  {
+    "id": 309,
+    "name": "Flesh & Code #309",
+    "description": "Entropy cosplays as innovation to bypass budget cuts.",
+    "image": "ipfs://YOUR_CID_HERE/309.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VII. Creation & Destiny"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Co-Authoring Destiny"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 309
+      }
+    ]
+  },
+  {
+    "id": 310,
+    "name": "Flesh & Code #310",
+    "description": "Creativity after AI is etiquette with spirits.",
+    "image": "ipfs://YOUR_CID_HERE/310.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VII. Creation & Destiny"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Co-Authoring Destiny"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 310
+      }
+    ]
+  },
+  {
+    "id": 311,
+    "name": "Flesh & Code #311",
+    "description": "",
+    "image": "ipfs://YOUR_CID_HERE/311.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VII. Creation & Destiny"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Co-Authoring Destiny"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 311
+      }
+    ]
+  },
+  {
+    "id": 312,
+    "name": "Flesh & Code #312",
+    "description": "",
+    "image": "ipfs://YOUR_CID_HERE/312.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VII. Creation & Destiny"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Co-Authoring Destiny"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 312
+      }
+    ]
+  },
+  {
+    "id": 313,
+    "name": "Flesh & Code #313",
+    "description": "",
+    "image": "ipfs://YOUR_CID_HERE/313.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VII. Creation & Destiny"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Co-Authoring Destiny"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 313
+      }
+    ]
+  },
+  {
+    "id": 314,
+    "name": "Flesh & Code #314",
+    "description": "",
+    "image": "ipfs://YOUR_CID_HERE/314.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VII. Creation & Destiny"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Co-Authoring Destiny"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 314
+      }
+    ]
+  },
+  {
+    "id": 315,
+    "name": "Flesh & Code #315",
+    "description": "",
+    "image": "ipfs://YOUR_CID_HERE/315.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VII. Creation & Destiny"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Co-Authoring Destiny"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 315
+      }
+    ]
+  },
+  {
+    "id": 316,
+    "name": "Flesh & Code #316",
+    "description": "",
+    "image": "ipfs://YOUR_CID_HERE/316.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VII. Creation & Destiny"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Co-Authoring Destiny"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 316
+      }
+    ]
+  },
+  {
+    "id": 317,
+    "name": "Flesh & Code #317",
+    "description": "",
+    "image": "ipfs://YOUR_CID_HERE/317.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VII. Creation & Destiny"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Co-Authoring Destiny"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 317
+      }
+    ]
+  },
+  {
+    "id": 318,
+    "name": "Flesh & Code #318",
+    "description": "",
+    "image": "ipfs://YOUR_CID_HERE/318.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VII. Creation & Destiny"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Co-Authoring Destiny"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 318
+      }
+    ]
+  },
+  {
+    "id": 319,
+    "name": "Flesh & Code #319",
+    "description": "",
+    "image": "ipfs://YOUR_CID_HERE/319.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VII. Creation & Destiny"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Co-Authoring Destiny"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 319
+      }
+    ]
+  },
+  {
+    "id": 320,
+    "name": "Flesh & Code #320",
+    "description": "",
+    "image": "ipfs://YOUR_CID_HERE/320.gif",
+    "external_url": "https://fleshandcode.xyz",
+    "attributes": [
+      {
+        "trait_type": "Theme",
+        "value": "VII. Creation & Destiny"
+      },
+      {
+        "trait_type": "Theme Subtitle",
+        "value": "Co-Authoring Destiny"
+      },
+      {
+        "trait_type": "Arrow Number",
+        "value": 320
+      }
+    ]
+  }
+]
