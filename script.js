@@ -154,6 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
     { file: 'Digital%20Pulse%20ext%20v1.1.2.1.1.mp3', title: 'Digital Pulse' }
   ];
   let currentTrackIndex = 0;
+  let isPlaying = false;
   const trackTitleEl = document.getElementById('track-title');
   const trackNavEl = document.querySelector('.track-nav');
   const prevTrackBtn = document.getElementById('prev-track');
@@ -167,111 +168,118 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Update track title and nav display
-  function updateTrackTitle() {
-    if (!trackTitleEl) return;
-    if (bgAudio && !bgAudio.paused) {
-      trackTitleEl.textContent = playlist[currentTrackIndex].title;
-      trackTitleEl.classList.add('visible');
-      if (trackNavEl) trackNavEl.classList.add('visible');
-    } else {
-      trackTitleEl.classList.remove('visible');
-      if (trackNavEl) trackNavEl.classList.remove('visible');
-    }
-  }
+  // Update UI to reflect current state
+  function updateUI() {
+    if (!audioToggle) return;
 
-  // Load and play a track
-  function loadTrack(index) {
-    if (!bgAudio) return;
-    currentTrackIndex = index % playlist.length;
-    bgAudio.src = playlist[currentTrackIndex].file;
-    bgAudio.load();
-    updateTrackTitle();
-  }
-
-  // Play next track in playlist
-  function playNextTrack() {
-    loadTrack(currentTrackIndex + 1);
-    bgAudio.play().then(updateTrackTitle).catch(() => {});
-  }
-
-  // Update background music button state
-  function updateAudioButton() {
-    if (!audioToggle || !bgAudio) return;
-    if (bgAudio.paused) {
-      audioToggle.classList.remove('playing');
-      audioToggle.classList.add('paused');
-    } else {
+    // Update button classes
+    if (isPlaying) {
       audioToggle.classList.remove('paused');
       audioToggle.classList.add('playing');
+    } else {
+      audioToggle.classList.remove('playing');
+      audioToggle.classList.add('paused');
     }
-    updateTrackTitle();
+
+    // Update track title and nav visibility
+    if (trackTitleEl) {
+      if (isPlaying) {
+        trackTitleEl.textContent = playlist[currentTrackIndex].title;
+        trackTitleEl.classList.add('visible');
+        if (trackNavEl) trackNavEl.classList.add('visible');
+      } else {
+        trackTitleEl.classList.remove('visible');
+        if (trackNavEl) trackNavEl.classList.remove('visible');
+      }
+    }
+  }
+
+  // Play current track
+  function playTrack() {
+    if (!bgAudio) return;
+    bgAudio.src = playlist[currentTrackIndex].file;
+    bgAudio.play().then(() => {
+      isPlaying = true;
+      updateUI();
+    }).catch(() => {
+      isPlaying = false;
+      updateUI();
+    });
+  }
+
+  // Pause playback
+  function pauseTrack() {
+    if (!bgAudio) return;
+    bgAudio.pause();
+    isPlaying = false;
+    updateUI();
+  }
+
+  // Go to next track
+  function nextTrack() {
+    currentTrackIndex = (currentTrackIndex + 1) % playlist.length;
+    if (isPlaying) {
+      playTrack();
+    }
+  }
+
+  // Go to previous track
+  function prevTrack() {
+    currentTrackIndex = (currentTrackIndex - 1 + playlist.length) % playlist.length;
+    if (isPlaying) {
+      playTrack();
+    }
   }
 
   if (bgAudio && audioToggle) {
-    // Shuffle and load first track
+    // Shuffle playlist on load
     shufflePlaylist();
-    loadTrack(0);
     bgAudio.volume = 0.4;
 
     // When track ends, play next
-    bgAudio.addEventListener('ended', playNextTrack);
+    bgAudio.addEventListener('ended', nextTrack);
 
     // Initialize button state (paused by default)
-    updateAudioButton();
+    updateUI();
 
+    // Main play/pause button
     audioToggle.addEventListener('click', (e) => {
       e.stopPropagation();
-      if (bgAudio.paused) {
-        // Pause audiobook if playing, then play background music
+      if (isPlaying) {
+        pauseTrack();
+      } else {
+        // Pause audiobook if playing
         if (audiobookAudio && !audiobookAudio.paused) {
           audiobookAudio.pause();
         }
-        bgAudio.play().then(updateAudioButton).catch(() => {});
-      } else {
-        bgAudio.pause();
-        updateAudioButton();
+        playTrack();
       }
     });
 
-    // Track navigation buttons
+    // Previous track button
     if (prevTrackBtn) {
       prevTrackBtn.addEventListener('click', (e) => {
         e.stopPropagation();
-        const wasPlaying = !bgAudio.paused;
-        const newIndex = (currentTrackIndex - 1 + playlist.length) % playlist.length;
-        loadTrack(newIndex);
-        if (wasPlaying) {
-          bgAudio.play().then(updateAudioButton).catch(() => {});
-        } else {
-          updateTrackTitle();
-        }
+        prevTrack();
+        updateUI();
       });
     }
 
+    // Next track button
     if (nextTrackBtn) {
       nextTrackBtn.addEventListener('click', (e) => {
         e.stopPropagation();
-        const wasPlaying = !bgAudio.paused;
-        const newIndex = (currentTrackIndex + 1) % playlist.length;
-        loadTrack(newIndex);
-        if (wasPlaying) {
-          bgAudio.play().then(updateAudioButton).catch(() => {});
-        } else {
-          updateTrackTitle();
-        }
+        nextTrack();
+        updateUI();
       });
     }
-
-    // NO auto-play on interaction - only play when user clicks the music button
   }
 
   // Audiobook: pause background music when audiobook plays
   if (audiobookAudio) {
     audiobookAudio.addEventListener('play', () => {
       if (bgAudio && !bgAudio.paused) {
-        bgAudio.pause();
-        updateAudioButton();
+        pauseTrack();
       }
     });
   }
