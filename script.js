@@ -201,11 +201,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (bgAudio.paused) {
       audioToggle.classList.remove('playing');
       audioToggle.classList.add('paused');
-      audioToggle.innerHTML = '<span class="audio-icon muted">&#9835;</span>';
     } else {
-      audioToggle.classList.add('playing');
       audioToggle.classList.remove('paused');
-      audioToggle.innerHTML = '<span class="audio-icon">&#9835;</span>';
+      audioToggle.classList.add('playing');
     }
     updateTrackTitle();
   }
@@ -241,10 +239,12 @@ document.addEventListener('DOMContentLoaded', () => {
       prevTrackBtn.addEventListener('click', (e) => {
         e.stopPropagation();
         const wasPlaying = !bgAudio.paused;
-        currentTrackIndex = (currentTrackIndex - 1 + playlist.length) % playlist.length;
-        loadTrack(currentTrackIndex);
+        const newIndex = (currentTrackIndex - 1 + playlist.length) % playlist.length;
+        loadTrack(newIndex);
         if (wasPlaying) {
           bgAudio.play().then(updateAudioButton).catch(() => {});
+        } else {
+          updateTrackTitle();
         }
       });
     }
@@ -253,10 +253,12 @@ document.addEventListener('DOMContentLoaded', () => {
       nextTrackBtn.addEventListener('click', (e) => {
         e.stopPropagation();
         const wasPlaying = !bgAudio.paused;
-        currentTrackIndex = (currentTrackIndex + 1) % playlist.length;
-        loadTrack(currentTrackIndex);
+        const newIndex = (currentTrackIndex + 1) % playlist.length;
+        loadTrack(newIndex);
         if (wasPlaying) {
           bgAudio.play().then(updateAudioButton).catch(() => {});
+        } else {
+          updateTrackTitle();
         }
       });
     }
