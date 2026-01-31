@@ -197,11 +197,14 @@ document.addEventListener('DOMContentLoaded', () => {
   // Play current track
   function playTrack() {
     if (!bgAudio) return;
+    console.log('Playing track:', currentTrackIndex, playlist[currentTrackIndex].title);
     bgAudio.src = playlist[currentTrackIndex].file;
     bgAudio.play().then(() => {
+      console.log('Playback started');
       isPlaying = true;
       updateUI();
-    }).catch(() => {
+    }).catch((err) => {
+      console.error('Playback failed:', err);
       isPlaying = false;
       updateUI();
     });
@@ -232,6 +235,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   if (bgAudio && audioToggle) {
+    console.log('Music player initialized');
+
     // Shuffle playlist on load
     shufflePlaylist();
     bgAudio.volume = 0.4;
@@ -245,6 +250,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Main play/pause button
     audioToggle.addEventListener('click', (e) => {
       e.stopPropagation();
+      console.log('Audio button clicked, isPlaying:', isPlaying);
       if (isPlaying) {
         pauseTrack();
       } else {
