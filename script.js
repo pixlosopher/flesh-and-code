@@ -143,8 +143,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const bgAudio = document.getElementById('background-audio');
   const audioToggle = document.getElementById('audio-toggle');
   const audiobookAudio = document.getElementById('audiobook-audio');
+  const trackTitleEl = document.getElementById('track-title');
+  const trackNavEl = document.querySelector('.track-nav');
+  const prevTrackBtn = document.getElementById('prev-track');
+  const nextTrackBtn = document.getElementById('next-track');
 
-  // Playlist of tracks with display titles - shuffled on load
+  // Playlist of tracks with display titles
   const playlist = [
     { file: 'FLESHANDCODE.mp3', title: 'Flesh and Code' },
     { file: 'THECODEWRITESBACK.mp3', title: 'The Code Writes Back' },
@@ -154,11 +158,6 @@ document.addEventListener('DOMContentLoaded', () => {
     { file: 'Digital%20Pulse%20ext%20v1.1.2.1.1.mp3', title: 'Digital Pulse' }
   ];
   let currentTrackIndex = 0;
-  let isPlaying = false;
-  const trackTitleEl = document.getElementById('track-title');
-  const trackNavEl = document.querySelector('.track-nav');
-  const prevTrackBtn = document.getElementById('prev-track');
-  const nextTrackBtn = document.getElementById('next-track');
 
   // Shuffle playlist on load
   function shufflePlaylist() {
@@ -168,12 +167,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Update UI to reflect current state
+  // Update UI based on actual audio state
   function updateUI() {
-    if (!audioToggle) return;
+    if (!audioToggle || !bgAudio) return;
+
+    const playing = !bgAudio.paused;
 
     // Update button classes
-    if (isPlaying) {
+    if (playing) {
       audioToggle.classList.remove('paused');
       audioToggle.classList.add('playing');
     } else {
@@ -183,8 +184,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Update track title and nav visibility
     if (trackTitleEl) {
-      if (isPlaying) {
-        trackTitleEl.textContent = playlist[currentTrackIndex].title;
+      trackTitleEl.textContent = playlist[currentTrackIndex].title;
+      if (playing) {
         trackTitleEl.classList.add('visible');
         if (trackNavEl) trackNavEl.classList.add('visible');
       } else {
@@ -194,71 +195,36 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Play current track
-  function playTrack() {
-    if (!bgAudio) return;
-    console.log('Playing track:', currentTrackIndex, playlist[currentTrackIndex].title);
-    bgAudio.src = playlist[currentTrackIndex].file;
-    bgAudio.play().then(() => {
-      console.log('Playback started');
-      isPlaying = true;
-      updateUI();
-    }).catch((err) => {
-      console.error('Playback failed:', err);
-      isPlaying = false;
-      updateUI();
-    });
-  }
-
-  // Pause playback
-  function pauseTrack() {
-    if (!bgAudio) return;
-    bgAudio.pause();
-    isPlaying = false;
-    updateUI();
-  }
-
-  // Go to next track
-  function nextTrack() {
-    currentTrackIndex = (currentTrackIndex + 1) % playlist.length;
-    if (isPlaying) {
-      playTrack();
-    }
-  }
-
-  // Go to previous track
-  function prevTrack() {
-    currentTrackIndex = (currentTrackIndex - 1 + playlist.length) % playlist.length;
-    if (isPlaying) {
-      playTrack();
-    }
-  }
-
   if (bgAudio && audioToggle) {
-    console.log('Music player initialized');
-
     // Shuffle playlist on load
     shufflePlaylist();
     bgAudio.volume = 0.4;
+    bgAudio.src = playlist[currentTrackIndex].file;
 
-    // When track ends, play next
-    bgAudio.addEventListener('ended', nextTrack);
+    // Listen to audio events to keep UI in sync
+    bgAudio.addEventListener('play', updateUI);
+    bgAudio.addEventListener('pause', updateUI);
+    bgAudio.addEventListener('ended', () => {
+      // Auto-advance to next track
+      currentTrackIndex = (currentTrackIndex + 1) % playlist.length;
+      bgAudio.src = playlist[currentTrackIndex].file;
+      bgAudio.play().catch(() => {});
+    });
 
-    // Initialize button state (paused by default)
+    // Initialize button state
     updateUI();
 
     // Main play/pause button
     audioToggle.addEventListener('click', (e) => {
       e.stopPropagation();
-      console.log('Audio button clicked, isPlaying:', isPlaying);
-      if (isPlaying) {
-        pauseTrack();
-      } else {
+      if (bgAudio.paused) {
         // Pause audiobook if playing
         if (audiobookAudio && !audiobookAudio.paused) {
           audiobookAudio.pause();
         }
-        playTrack();
+        bgAudio.play().catch(() => {});
+      } else {
+        bgAudio.pause();
       }
     });
 
@@ -266,7 +232,12 @@ document.addEventListener('DOMContentLoaded', () => {
     if (prevTrackBtn) {
       prevTrackBtn.addEventListener('click', (e) => {
         e.stopPropagation();
-        prevTrack();
+        const wasPlaying = !bgAudio.paused;
+        currentTrackIndex = (currentTrackIndex - 1 + playlist.length) % playlist.length;
+        bgAudio.src = playlist[currentTrackIndex].file;
+        if (wasPlaying) {
+          bgAudio.play().catch(() => {});
+        }
         updateUI();
       });
     }
@@ -275,24 +246,25 @@ document.addEventListener('DOMContentLoaded', () => {
     if (nextTrackBtn) {
       nextTrackBtn.addEventListener('click', (e) => {
         e.stopPropagation();
-        nextTrack();
+        const wasPlaying = !bgAudio.paused;
+        currentTrackIndex = (currentTrackIndex + 1) % playlist.length;
+        bgAudio.src = playlist[currentTrackIndex].file;
+        if (wasPlaying) {
+          bgAudio.play().catch(() => {});
+        }
         updateUI();
       });
     }
   }
 
   // Audiobook: pause background music when audiobook plays
-  if (audiobookAudio) {
+  if (audiobookAudio && bgAudio) {
     audiobookAudio.addEventListener('play', () => {
-      if (bgAudio && !bgAudio.paused) {
-        pauseTrack();
+      if (!bgAudio.paused) {
+        bgAudio.pause();
       }
     });
   }
-
-  // ============================================
-  // AUDIOBOOK FLOATING BUTTON CONTROL
-  // ============================================
 
   // ============================================
   // AUDIOBOOK FLOATING BUTTON CONTROL
