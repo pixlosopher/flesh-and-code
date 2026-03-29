@@ -327,6 +327,91 @@ class GlitchOracle {
     this.a11yEl.textContent = nearbyTexts.join(' | ');
   }
 
+  // === CORRUPTION LAYER ===
+
+  renderWallWithCorruption() {
+    const { ctx, displayWidth, displayHeight } = this;
+
+    ctx.clearRect(0, 0, displayWidth, displayHeight);
+    ctx.fillStyle = COLORS.bg;
+    ctx.fillRect(0, 0, displayWidth, displayHeight);
+
+    this.corruption.rgbPhase += 0.015;
+    const rgbOffset = Math.sin(this.corruption.rgbPhase) * 2;
+
+    const channels = [
+      { color: '#ff004430', offsetX: -rgbOffset },
+      { color: '#00ff9940', offsetX: 0 },
+      { color: '#00ccff30', offsetX: rgbOffset },
+    ];
+
+    ctx.textBaseline = 'alphabetic';
+    ctx.globalCompositeOperation = 'screen';
+
+    for (const channel of channels) {
+      ctx.fillStyle = channel.color;
+      for (const block of this.wallBlocks) {
+        ctx.font = block.fontStr;
+        ctx.globalAlpha = block.opacity;
+        for (let i = 0; i < block.lines.length; i++) {
+          ctx.fillText(
+            block.lines[i].text,
+            block.x + channel.offsetX,
+            block.y + (i + 1) * block.lineHeight
+          );
+        }
+      }
+    }
+
+    ctx.globalCompositeOperation = 'source-over';
+    ctx.globalAlpha = 1;
+
+    if (this.frameCount % 2 === 0) {
+      this.applyCorruptionPass();
+    }
+  }
+
+  applyCorruptionPass() {
+    const { ctx, canvas } = this;
+    const dpr = window.devicePixelRatio || 1;
+    const w = canvas.width;
+    const h = canvas.height;
+
+    const imageData = ctx.getImageData(0, 0, w, h);
+    const data = imageData.data;
+
+    this.corruption.scanlineOffset += 0.5;
+    this.corruption.noiseFrame++;
+
+    let noiseSeed = this.corruption.noiseFrame * 1337;
+
+    for (let y = 0; y < h; y++) {
+      const scanY = (y + Math.floor(this.corruption.scanlineOffset * dpr)) % Math.floor(8 * dpr);
+      const inScanline = scanY < 2 * dpr;
+
+      for (let x = 0; x < w; x++) {
+        const idx = (y * w + x) * 4;
+        if (data[idx + 3] === 0) continue;
+
+        noiseSeed = (noiseSeed * 16807 + 0) % 2147483647;
+        const noise = (noiseSeed / 2147483647);
+        const noiseFactor = 0.7 + noise * 0.3;
+
+        data[idx] = Math.floor(data[idx] * noiseFactor);
+        data[idx + 1] = Math.floor(data[idx + 1] * noiseFactor);
+        data[idx + 2] = Math.floor(data[idx + 2] * noiseFactor);
+
+        if (inScanline) {
+          data[idx] = Math.floor(data[idx] * 0.6);
+          data[idx + 1] = Math.floor(data[idx + 1] * 0.6);
+          data[idx + 2] = Math.floor(data[idx + 2] * 0.6);
+        }
+      }
+    }
+
+    ctx.putImageData(imageData, 0, 0);
+  }
+
   tick() {
     if (!this.isVisible) {
       this.animFrameId = null;
@@ -340,8 +425,11 @@ class GlitchOracle {
     this.updateShockwave(now);
     this.frameCount++;
 
-    // For now, just render clean — corruption added in Task 3
-    this.renderWallClean();
+    if (this.reducedMotion) {
+      this.renderWallClean();
+    } else {
+      this.renderWallWithCorruption();
+    }
 
     if (this.frameCount % 30 === 0) this.updateA11y();
 
