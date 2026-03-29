@@ -3,7 +3,17 @@
 // Uses pretext for DOM-free text measurement
 // ============================================
 
-import { prepareWithSegments, layoutWithLines } from 'https://esm.sh/@chenglou/pretext@0.0.3';
+let prepareWithSegments, layoutWithLines;
+let pretextAvailable = false;
+
+try {
+  const pretext = await import('https://esm.sh/@chenglou/pretext@0.0.3');
+  prepareWithSegments = pretext.prepareWithSegments;
+  layoutWithLines = pretext.layoutWithLines;
+  pretextAvailable = true;
+} catch (e) {
+  console.warn('Glitch Oracle: pretext not available, using canvas fallback', e);
+}
 
 const FONT_SIZE_DESKTOP = 28;
 const FONT_SIZE_MOBILE = 20;
@@ -95,6 +105,7 @@ class GlitchOracle {
   }
 
   prepareAllArrows() {
+    if (!pretextAvailable) return;
     this.prepared = this.arrows.map(text =>
       prepareWithSegments(text, this.fontString)
     );
@@ -103,12 +114,48 @@ class GlitchOracle {
   getLines() {
     const padding = window.innerWidth <= 768 ? 30 : 60;
     const maxWidth = this.displayWidth - padding * 2;
-    const result = layoutWithLines(
-      this.prepared[this.currentIndex],
-      maxWidth,
-      this.lineHeight
-    );
-    return result;
+
+    if (pretextAvailable && this.prepared[this.currentIndex]) {
+      return layoutWithLines(
+        this.prepared[this.currentIndex],
+        maxWidth,
+        this.lineHeight
+      );
+    }
+
+    // Fallback: manual line-breaking with canvas measureText
+    return this.getLinesFallback(maxWidth);
+  }
+
+  getLinesFallback(maxWidth) {
+    const text = this.arrows[this.currentIndex] || '';
+    const ctx = this.ctx;
+    ctx.font = this.fontString;
+
+    const words = text.split(' ');
+    const lines = [];
+    let currentLine = '';
+
+    for (const word of words) {
+      const testLine = currentLine ? `${currentLine} ${word}` : word;
+      const metrics = ctx.measureText(testLine);
+      if (metrics.width > maxWidth && currentLine) {
+        const lineWidth = ctx.measureText(currentLine).width;
+        lines.push({ text: currentLine, width: lineWidth });
+        currentLine = word;
+      } else {
+        currentLine = testLine;
+      }
+    }
+    if (currentLine) {
+      lines.push({ text: currentLine, width: ctx.measureText(currentLine).width });
+    }
+
+    return {
+      lines,
+      lineCount: lines.length,
+      height: lines.length * this.lineHeight,
+    };
   }
 
   renderClean() {
@@ -391,22 +438,26 @@ class GlitchOracle {
 
   transitionTo(index) {
     if (this.isTransitioning) return;
-    this.isTransitioning = true;
-    this.stopIdleTimer();
-    this.idleActive = false;
 
     this.currentIndex = index;
     this.updateCounter();
     this.updateA11y();
 
-    const layout = this.getLines();
-
-    if (!this.reducedMotion) {
-      this.initScramble(layout.lines);
-      this.initDisplacement();
-      this.glitch.rgbOffset = 8;
-      this.glitch.targetRgbOffset = 0;
+    // Reduced motion: just swap cleanly
+    if (this.reducedMotion) {
+      this.renderClean();
+      return;
     }
+
+    this.isTransitioning = true;
+    this.stopIdleTimer();
+    this.idleActive = false;
+
+    const layout = this.getLines();
+    this.initScramble(layout.lines);
+    this.initDisplacement();
+    this.glitch.rgbOffset = 8;
+    this.glitch.targetRgbOffset = 0;
 
     this.transitionStart = performance.now();
     this.transitionLayout = layout;
