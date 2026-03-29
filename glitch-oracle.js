@@ -148,6 +148,32 @@ class GlitchOracle {
     }
   }
 
+  renderWithRGB(lines, startY, padding, rgbOffset) {
+    const { ctx, displayWidth } = this;
+
+    const channels = [
+      { color: COLORS.pink, offsetX: -rgbOffset },
+      { color: COLORS.green, offsetX: 0 },
+      { color: COLORS.blue, offsetX: rgbOffset },
+    ];
+
+    ctx.font = this.fontString;
+    ctx.textBaseline = 'alphabetic';
+    ctx.globalCompositeOperation = 'screen';
+
+    for (const channel of channels) {
+      ctx.fillStyle = channel.color;
+      for (let i = 0; i < lines.length; i++) {
+        const line = lines[i];
+        const x = (displayWidth - line.width) / 2 + channel.offsetX;
+        const y = startY + i * this.lineHeight;
+        ctx.fillText(line.text, x, y);
+      }
+    }
+
+    ctx.globalCompositeOperation = 'source-over';
+  }
+
   setupObserver() {
     const section = document.getElementById('glitch-oracle');
     if (!section) return;
