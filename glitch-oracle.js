@@ -148,6 +148,68 @@ class GlitchOracle {
     }
   }
 
+  initDisplacement() {
+    const slices = [];
+    const sliceCount = Math.floor(this.displayHeight / 4);
+    for (let i = 0; i < sliceCount; i++) {
+      slices.push({
+        y: i * 4,
+        height: 2 + Math.floor(Math.random() * 6),
+        offset: (Math.random() - 0.5) * 80,
+        active: Math.random() < 0.3,
+      });
+    }
+    this.glitch.displacement = slices;
+  }
+
+  decayDisplacement(dt) {
+    const decay = dt / 400;
+    for (const slice of this.glitch.displacement) {
+      slice.offset *= Math.max(0, 1 - decay);
+      if (Math.abs(slice.offset) < 0.5) {
+        slice.offset = 0;
+        slice.active = false;
+      }
+    }
+  }
+
+  applyDisplacement() {
+    const { ctx, canvas } = this;
+    const dpr = window.devicePixelRatio || 1;
+    const w = canvas.width;
+    const h = canvas.height;
+
+    const imageData = ctx.getImageData(0, 0, w, h);
+    const data = imageData.data;
+    const copy = new Uint8ClampedArray(data);
+
+    for (const slice of this.glitch.displacement) {
+      if (!slice.active || slice.offset === 0) continue;
+
+      const yStart = Math.floor(slice.y * dpr);
+      const yEnd = Math.min(h, yStart + Math.floor(slice.height * dpr));
+      const shift = Math.floor(slice.offset * dpr);
+
+      for (let y = yStart; y < yEnd; y++) {
+        for (let x = 0; x < w; x++) {
+          const srcX = x - shift;
+          const dstIdx = (y * w + x) * 4;
+          if (srcX >= 0 && srcX < w) {
+            const srcIdx = (y * w + srcX) * 4;
+            data[dstIdx] = copy[srcIdx];
+            data[dstIdx + 1] = copy[srcIdx + 1];
+            data[dstIdx + 2] = copy[srcIdx + 2];
+            data[dstIdx + 3] = copy[srcIdx + 3];
+          } else {
+            data[dstIdx + 3] = 0;
+          }
+        }
+      }
+    }
+
+    ctx.putImageData(imageData, 0, 0);
+  }
+
   renderWithRGB(lines, startY, padding, rgbOffset) {
     const { ctx, displayWidth } = this;
 
