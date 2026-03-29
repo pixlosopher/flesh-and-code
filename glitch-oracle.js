@@ -48,6 +48,12 @@ class GlitchOracle {
 
     this.mouse = { x: -9999, y: -9999, smoothX: -9999, smoothY: -9999 };
 
+    this.hasEnteredView = false;
+    this.entryStart = null;
+    this.skipCorruptionPixels = false;
+    this._lastFrameTime = 0;
+    this._slowFrames = 0;
+
     this.shockwave = null;
 
     this.corruption = {
@@ -206,8 +212,13 @@ class GlitchOracle {
 
     const observer = new IntersectionObserver(
       ([entry]) => {
+        const wasVisible = this.isVisible;
         this.isVisible = entry.isIntersecting;
         if (this.isVisible) {
+          if (!wasVisible && !this.hasEnteredView) {
+            this.hasEnteredView = true;
+            this.entryStart = performance.now();
+          }
           if (!this.animFrameId) this.tick();
         } else {
           if (this.animFrameId) {
@@ -416,6 +427,19 @@ class GlitchOracle {
   }
 
   applyCorruptionPass() {
+    if (this.skipCorruptionPixels) return;
+
+    // Entry fade: extra corruption in first 800ms
+    let entryFade = 1;
+    if (this.entryStart) {
+      const entryElapsed = performance.now() - this.entryStart;
+      if (entryElapsed < 800) {
+        entryFade = 1 + 2 * (1 - entryElapsed / 800);
+      } else {
+        this.entryStart = null;
+      }
+    }
+
     const { ctx, canvas } = this;
     const dpr = window.devicePixelRatio || 1;
     const w = canvas.width;
@@ -455,7 +479,7 @@ class GlitchOracle {
           }
         }
 
-        const corruptionStrength = 1 - clarity;
+        const corruptionStrength = Math.min(1, (1 - clarity) * entryFade);
 
         noiseSeed = (noiseSeed * 16807 + 0) % 2147483647;
         const noise = noiseSeed / 2147483647;
@@ -561,6 +585,16 @@ class GlitchOracle {
     const now = performance.now();
     this.updateShockwave(now);
     this.frameCount++;
+
+    // Performance monitoring
+    if (this._lastFrameTime) {
+      const frameDelta = now - this._lastFrameTime;
+      if (frameDelta > 32 && this.frameCount > 10) {
+        this._slowFrames++;
+        if (this._slowFrames > 10) this.skipCorruptionPixels = true;
+      }
+    }
+    this._lastFrameTime = now;
 
     if (this.reducedMotion) {
       this.renderWallClean();
