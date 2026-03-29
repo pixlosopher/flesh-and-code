@@ -148,10 +148,95 @@ class GlitchOracle {
     }
   }
 
-  // Placeholder methods — will be implemented in Tasks 4-8
-  setupObserver() {}
-  setupInteractions() {}
-  setupResize() {}
+  setupObserver() {
+    const section = document.getElementById('glitch-oracle');
+    if (!section) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        this.isVisible = entry.isIntersecting;
+        if (this.isVisible) {
+          this.startIdleTimer();
+          if (!this.animFrameId) this.tick();
+        } else {
+          this.stopIdleTimer();
+          if (this.animFrameId) {
+            cancelAnimationFrame(this.animFrameId);
+            this.animFrameId = null;
+          }
+        }
+      },
+      { threshold: 0.2 }
+    );
+    observer.observe(section);
+
+    let lastScrollArrow = this.currentIndex;
+    const scrollHandler = () => {
+      if (!this.isVisible || this.isTransitioning) return;
+
+      const rect = section.getBoundingClientRect();
+      const sectionTop = -rect.top;
+      const sectionHeight = rect.height - window.innerHeight;
+      const progress = Math.max(0, Math.min(1, sectionTop / sectionHeight));
+      const targetIndex = Math.floor(progress * (this.arrows.length - 1));
+
+      if (targetIndex !== lastScrollArrow && targetIndex >= 0 && targetIndex < this.arrows.length) {
+        lastScrollArrow = targetIndex;
+        this.transitionTo(targetIndex);
+      }
+    };
+
+    window.addEventListener('scroll', scrollHandler, { passive: true });
+  }
+
+  setupInteractions() {
+    this.canvas.addEventListener('click', () => {
+      if (this.isTransitioning) return;
+      let next;
+      do {
+        next = Math.floor(Math.random() * this.arrows.length);
+      } while (next === this.currentIndex && this.arrows.length > 1);
+      this.transitionTo(next);
+    });
+
+    this.canvas.style.cursor = 'none';
+  }
+
+  setupResize() {
+    const ro = new ResizeObserver(() => {
+      this.resizeCanvas();
+      this.prepareAllArrows();
+      this.renderClean();
+    });
+    ro.observe(this.canvas.parentElement);
+  }
+
+  startIdleTimer() {
+    this.stopIdleTimer();
+    this.idleActive = false;
+    this.idleTimer = setTimeout(() => {
+      this.idleActive = true;
+      if (!this.animFrameId) this.tick();
+    }, 5000);
+  }
+
+  stopIdleTimer() {
+    if (this.idleTimer) {
+      clearTimeout(this.idleTimer);
+      this.idleTimer = null;
+    }
+    this.idleActive = false;
+  }
+
+  transitionTo(index) {
+    this.currentIndex = index;
+    this.renderClean();
+    this.startIdleTimer();
+  }
+
+  tick() {
+    this.animFrameId = null;
+  }
 }
 
 if (document.readyState === 'loading') {
