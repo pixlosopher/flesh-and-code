@@ -291,7 +291,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Pause background music if playing, then play audiobook
         if (bgAudio && !bgAudio.paused) {
           bgAudio.pause();
-          updateAudioButton();
+          updateUI();
         }
         audiobookAudio.play().then(updateAudiobookButton).catch(() => {});
       } else {
@@ -993,6 +993,30 @@ document.addEventListener('DOMContentLoaded', () => {
   // ============================================
   const galleryToggles = document.querySelectorAll('.theme-gallery .gallery-toggle');
 
+  // ============================================
+  // GALLERY LAZY LOADING - IntersectionObserver
+  // ============================================
+  const lazyImageObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const img = entry.target;
+        if (img.dataset.src) {
+          img.src = img.dataset.src;
+          img.removeAttribute('data-src');
+          lazyImageObserver.unobserve(img);
+        }
+      }
+    });
+  }, { rootMargin: '200px 0px', threshold: 0 });
+
+  // Observe images that are currently visible (not in collapsed sections)
+  function observeVisibleLazyImages() {
+    document.querySelectorAll('img[data-src]').forEach(img => {
+      lazyImageObserver.observe(img);
+    });
+  }
+  observeVisibleLazyImages();
+
   galleryToggles.forEach(toggle => {
     toggle.addEventListener('click', () => {
       const content = toggle.nextElementSibling;
@@ -1004,6 +1028,13 @@ document.addEventListener('DOMContentLoaded', () => {
       // Toggle collapsed class
       if (content) {
         content.classList.toggle('collapsed');
+
+        // When opening, observe any lazy images inside
+        if (!content.classList.contains('collapsed')) {
+          content.querySelectorAll('img[data-src]').forEach(img => {
+            lazyImageObserver.observe(img);
+          });
+        }
       }
     });
   });

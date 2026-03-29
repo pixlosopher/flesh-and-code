@@ -859,6 +859,7 @@ section {
   height: 200px;
   object-fit: cover;
   display: block;
+  background: var(--bg-card);
 }
 
 .video-glitch-overlay {
