@@ -366,6 +366,50 @@ class GlitchOracle {
     ctx.globalCompositeOperation = 'source-over';
     ctx.globalAlpha = 1;
 
+    // Clean pass in reveal zone — sharp text without RGB split
+    if (this.mouse.smoothX > -1000) {
+      ctx.save();
+      ctx.beginPath();
+      ctx.arc(this.mouse.smoothX, this.mouse.smoothY, REVEAL_RADIUS + REVEAL_FALLOFF, 0, Math.PI * 2);
+      ctx.clip();
+
+      ctx.fillStyle = COLORS.bg;
+      ctx.fillRect(
+        this.mouse.smoothX - REVEAL_RADIUS - REVEAL_FALLOFF - 5,
+        this.mouse.smoothY - REVEAL_RADIUS - REVEAL_FALLOFF - 5,
+        (REVEAL_RADIUS + REVEAL_FALLOFF) * 2 + 10,
+        (REVEAL_RADIUS + REVEAL_FALLOFF) * 2 + 10
+      );
+
+      for (const block of this.wallBlocks) {
+        ctx.font = block.fontStr;
+        ctx.globalAlpha = Math.min(1, block.opacity + 0.3);
+        ctx.fillStyle = block.color;
+        for (let i = 0; i < block.lines.length; i++) {
+          ctx.fillText(
+            block.lines[i].text,
+            block.x,
+            block.y + (i + 1) * block.lineHeight
+          );
+        }
+      }
+      ctx.globalAlpha = 1;
+      ctx.restore();
+    }
+
+    // Glow at reveal circle edge
+    if (this.mouse.smoothX > -1000 && !this.reducedMotion) {
+      const gradient = ctx.createRadialGradient(
+        this.mouse.smoothX, this.mouse.smoothY, REVEAL_RADIUS - 10,
+        this.mouse.smoothX, this.mouse.smoothY, REVEAL_RADIUS + REVEAL_FALLOFF
+      );
+      gradient.addColorStop(0, 'rgba(0, 255, 153, 0)');
+      gradient.addColorStop(0.5, 'rgba(0, 255, 153, 0.06)');
+      gradient.addColorStop(1, 'rgba(0, 255, 153, 0)');
+      ctx.fillStyle = gradient;
+      ctx.fillRect(0, 0, displayWidth, displayHeight);
+    }
+
     if (this.frameCount % 2 === 0) {
       this.applyCorruptionPass();
     }
@@ -383,28 +427,49 @@ class GlitchOracle {
     this.corruption.scanlineOffset += 0.5;
     this.corruption.noiseFrame++;
 
+    const mx = this.mouse.smoothX * dpr;
+    const my = this.mouse.smoothY * dpr;
+    const revealR = REVEAL_RADIUS * dpr;
+    const falloff = REVEAL_FALLOFF * dpr;
+    const mouseActive = this.mouse.smoothX > -1000;
+
     let noiseSeed = this.corruption.noiseFrame * 1337;
 
     for (let y = 0; y < h; y++) {
       const scanY = (y + Math.floor(this.corruption.scanlineOffset * dpr)) % Math.floor(8 * dpr);
       const inScanline = scanY < 2 * dpr;
+      const dy = y - my;
 
       for (let x = 0; x < w; x++) {
         const idx = (y * w + x) * 4;
         if (data[idx + 3] === 0) continue;
 
+        let clarity = 0;
+        if (mouseActive) {
+          const dx = x - mx;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < revealR) {
+            clarity = 1;
+          } else if (dist < revealR + falloff) {
+            clarity = 1 - (dist - revealR) / falloff;
+          }
+        }
+
+        const corruptionStrength = 1 - clarity;
+
         noiseSeed = (noiseSeed * 16807 + 0) % 2147483647;
-        const noise = (noiseSeed / 2147483647);
-        const noiseFactor = 0.7 + noise * 0.3;
+        const noise = noiseSeed / 2147483647;
+        const noiseFactor = 1 - corruptionStrength * (0.3 * noise);
 
         data[idx] = Math.floor(data[idx] * noiseFactor);
         data[idx + 1] = Math.floor(data[idx + 1] * noiseFactor);
         data[idx + 2] = Math.floor(data[idx + 2] * noiseFactor);
 
-        if (inScanline) {
-          data[idx] = Math.floor(data[idx] * 0.6);
-          data[idx + 1] = Math.floor(data[idx + 1] * 0.6);
-          data[idx + 2] = Math.floor(data[idx + 2] * 0.6);
+        if (inScanline && corruptionStrength > 0.3) {
+          const scanDim = 0.6 + 0.4 * (1 - corruptionStrength);
+          data[idx] = Math.floor(data[idx] * scanDim);
+          data[idx + 1] = Math.floor(data[idx + 1] * scanDim);
+          data[idx + 2] = Math.floor(data[idx + 2] * scanDim);
         }
       }
     }
