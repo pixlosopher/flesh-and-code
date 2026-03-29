@@ -174,6 +174,79 @@ class GlitchOracle {
     ctx.globalCompositeOperation = 'source-over';
   }
 
+  initScramble(lines) {
+    this.glitch.scrambleChars = [];
+    for (const line of lines) {
+      const chars = [...line.text];
+      for (const ch of chars) {
+        this.glitch.scrambleChars.push({
+          target: ch,
+          current: ch === ' ' ? ' ' : GLITCH_CHARS[Math.floor(Math.random() * GLITCH_CHARS.length)],
+          resolved: false,
+        });
+      }
+      this.glitch.scrambleChars.push({ target: '\n', current: '\n', resolved: true });
+    }
+    this.glitch.scrambleProgress = 0;
+  }
+
+  advanceScramble(dt) {
+    const chars = this.glitch.scrambleChars;
+    const totalNonSpace = chars.filter(c => c.target !== ' ' && c.target !== '\n').length;
+    if (totalNonSpace === 0) return;
+
+    this.glitch.scrambleProgress = Math.min(1, this.glitch.scrambleProgress + dt / 600);
+    const resolveUpTo = Math.floor(this.glitch.scrambleProgress * chars.length);
+
+    let idx = 0;
+    for (const ch of chars) {
+      if (ch.target === ' ' || ch.target === '\n') { idx++; continue; }
+      if (idx < resolveUpTo) {
+        ch.current = ch.target;
+        ch.resolved = true;
+      } else if (!ch.resolved) {
+        ch.current = GLITCH_CHARS[Math.floor(Math.random() * GLITCH_CHARS.length)];
+      }
+      idx++;
+    }
+  }
+
+  renderScrambled(lines, startY, padding, rgbOffset) {
+    const { ctx, displayWidth } = this;
+    const channels = [
+      { color: COLORS.pink, offsetX: -rgbOffset },
+      { color: COLORS.green, offsetX: 0 },
+      { color: COLORS.blue, offsetX: rgbOffset },
+    ];
+
+    ctx.font = this.fontString;
+    ctx.textBaseline = 'alphabetic';
+    ctx.globalCompositeOperation = 'screen';
+
+    const scrambledLines = [];
+    let lineChars = [];
+    for (const ch of this.glitch.scrambleChars) {
+      if (ch.target === '\n') {
+        scrambledLines.push(lineChars.join(''));
+        lineChars = [];
+      } else {
+        lineChars.push(ch.current);
+      }
+    }
+    if (lineChars.length > 0) scrambledLines.push(lineChars.join(''));
+
+    for (const channel of channels) {
+      ctx.fillStyle = channel.color;
+      for (let i = 0; i < scrambledLines.length && i < lines.length; i++) {
+        const x = (displayWidth - lines[i].width) / 2 + channel.offsetX;
+        const y = startY + i * this.lineHeight;
+        ctx.fillText(scrambledLines[i], x, y);
+      }
+    }
+
+    ctx.globalCompositeOperation = 'source-over';
+  }
+
   setupObserver() {
     const section = document.getElementById('glitch-oracle');
     if (!section) return;
