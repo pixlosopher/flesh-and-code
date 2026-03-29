@@ -1,5 +1,5 @@
 // ============================================
-// GLITCH ORACLE - Canvas Aphorisms Engine
+// GLITCH ORACLE v2 - Wall of Corrupted Text
 // Uses pretext for DOM-free text measurement
 // ============================================
 
@@ -15,63 +15,56 @@ try {
   console.warn('Glitch Oracle: pretext not available, using canvas fallback', e);
 }
 
-const FONT_SIZE_DESKTOP = 28;
-const FONT_SIZE_MOBILE = 20;
-const LINE_HEIGHT_MULTIPLIER = 1.8;
 const FONT_FAMILY = "'Share Tech Mono', monospace";
-const GLITCH_CHARS = '!@#$%^&*()_+-=[]{}|;:,.<>?/~`ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+const ARROW_COUNT = 50;
+const REVEAL_RADIUS = 120;
+const REVEAL_FALLOFF = 40;
 
-// Colors from CSS variables
 const COLORS = {
   green: '#00ff99',
-  pink: '#ff00aa',
   blue: '#00ccff',
-  bg: '#050505',
   muted: '#666677',
+  bg: '#050505',
 };
+
+const FONT_SIZES = [14, 16, 18, 20, 24, 28, 32];
+const MOBILE_FONT_SIZES = [12, 14, 16, 18, 20];
 
 class GlitchOracle {
   constructor() {
     this.canvas = document.getElementById('oracle-canvas');
     if (!this.canvas) return;
 
-    this.ctx = this.canvas.getContext('2d');
+    this.ctx = this.canvas.getContext('2d', { willReadFrequently: true });
     this.counterEl = document.querySelector('.oracle-arrow-num');
     this.a11yEl = document.getElementById('oracle-a11y');
+
     this.arrows = [];
-    this.prepared = [];
-    this.currentIndex = 0;
+    this.wallBlocks = [];
     this.isVisible = false;
-    this.isTransitioning = false;
-    this.idleTimer = null;
-    this.idleActive = false;
     this.animFrameId = null;
+    this.frameCount = 0;
     this.reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-    // Glitch state
-    this.glitch = {
-      displacement: [],
-      scrambleChars: [],
-      scrambleProgress: 0,
-      rgbOffset: 0,
-      targetRgbOffset: 0,
-      idleRgbPhase: 0,
-      idleFlickerTimer: 0,
+    this.mouse = { x: -9999, y: -9999, smoothX: -9999, smoothY: -9999 };
+
+    this.shockwave = null;
+
+    this.corruption = {
+      rgbPhase: 0,
+      scanlineOffset: 0,
+      noiseFrame: 0,
     };
 
     this.init();
   }
 
-  get fontSize() {
-    return window.innerWidth <= 768 ? FONT_SIZE_MOBILE : FONT_SIZE_DESKTOP;
+  get isMobile() {
+    return window.innerWidth <= 768;
   }
 
-  get fontString() {
-    return `${this.fontSize}px ${FONT_FAMILY}`;
-  }
-
-  get lineHeight() {
-    return this.fontSize * LINE_HEIGHT_MULTIPLIER;
+  get fontSizes() {
+    return this.isMobile ? MOBILE_FONT_SIZES : FONT_SIZES;
   }
 
   async init() {
@@ -85,13 +78,12 @@ class GlitchOracle {
     }
 
     this.resizeCanvas();
-    this.prepareAllArrows();
+    this.buildWall();
     this.setupObserver();
     this.setupInteractions();
     this.setupResize();
-
-    this.currentIndex = Math.floor(Math.random() * this.arrows.length);
-    this.renderClean();
+    this.renderWallClean();
+    this.updateCounter();
   }
 
   resizeCanvas() {
@@ -99,49 +91,82 @@ class GlitchOracle {
     const dpr = window.devicePixelRatio || 1;
     this.canvas.width = rect.width * dpr;
     this.canvas.height = rect.height * dpr;
-    this.ctx.scale(dpr, dpr);
+    this.ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     this.displayWidth = rect.width;
     this.displayHeight = rect.height;
   }
 
-  prepareAllArrows() {
-    if (!pretextAvailable) return;
-    this.prepared = this.arrows.map(text =>
-      prepareWithSegments(text, this.fontString)
-    );
-  }
-
-  getLines() {
-    const padding = window.innerWidth <= 768 ? 30 : 60;
-    const maxWidth = this.displayWidth - padding * 2;
-
-    if (pretextAvailable && this.prepared[this.currentIndex]) {
-      return layoutWithLines(
-        this.prepared[this.currentIndex],
-        maxWidth,
-        this.lineHeight
-      );
+  shuffleArrows(count) {
+    const indices = [];
+    const used = new Set();
+    while (indices.length < count && indices.length < this.arrows.length) {
+      const idx = Math.floor(Math.random() * this.arrows.length);
+      if (!used.has(idx)) {
+        used.add(idx);
+        indices.push(idx);
+      }
     }
-
-    // Fallback: manual line-breaking with canvas measureText
-    return this.getLinesFallback(maxWidth);
+    return indices;
   }
 
-  getLinesFallback(maxWidth) {
-    const text = this.arrows[this.currentIndex] || '';
-    const ctx = this.ctx;
-    ctx.font = this.fontString;
+  buildWall() {
+    const count = this.isMobile ? 30 : ARROW_COUNT;
+    const indices = this.shuffleArrows(count);
+    const padding = this.isMobile ? 15 : 30;
+    const colCount = this.isMobile ? 2 : 3;
+    const colWidth = (this.displayWidth - padding * (colCount + 1)) / colCount;
 
+    this.wallBlocks = [];
+    const colHeights = new Array(colCount).fill(padding);
+
+    for (const idx of indices) {
+      const text = this.arrows[idx];
+      const fontSize = this.fontSizes[Math.floor(Math.random() * this.fontSizes.length)];
+      const lineHeight = fontSize * 1.5;
+      const fontStr = `${fontSize}px ${FONT_FAMILY}`;
+
+      let col = 0;
+      for (let c = 1; c < colCount; c++) {
+        if (colHeights[c] < colHeights[col]) col = c;
+      }
+
+      const x = padding + col * (colWidth + padding);
+      const y = colHeights[col];
+
+      let lines;
+      if (pretextAvailable) {
+        const prepared = prepareWithSegments(text, fontStr);
+        const result = layoutWithLines(prepared, colWidth, lineHeight);
+        lines = result.lines;
+      } else {
+        lines = this.fallbackLayout(text, colWidth, fontSize);
+      }
+
+      const blockHeight = lines.length * lineHeight;
+
+      const colorRoll = Math.random();
+      const color = colorRoll < 0.7 ? COLORS.green : colorRoll < 0.9 ? COLORS.blue : COLORS.muted;
+      const opacity = 0.3 + Math.random() * 0.7;
+
+      this.wallBlocks.push({
+        text, lines, x, y, fontSize, lineHeight, fontStr, color, opacity, arrowIndex: idx,
+      });
+
+      colHeights[col] += blockHeight + padding * 0.8;
+    }
+  }
+
+  fallbackLayout(text, maxWidth, fontSize) {
+    const ctx = this.ctx;
+    ctx.font = `${fontSize}px ${FONT_FAMILY}`;
     const words = text.split(' ');
     const lines = [];
     let currentLine = '';
 
     for (const word of words) {
       const testLine = currentLine ? `${currentLine} ${word}` : word;
-      const metrics = ctx.measureText(testLine);
-      if (metrics.width > maxWidth && currentLine) {
-        const lineWidth = ctx.measureText(currentLine).width;
-        lines.push({ text: currentLine, width: lineWidth });
+      if (ctx.measureText(testLine).width > maxWidth && currentLine) {
+        lines.push({ text: currentLine, width: ctx.measureText(currentLine).width });
         currentLine = word;
       } else {
         currentLine = testLine;
@@ -150,210 +175,29 @@ class GlitchOracle {
     if (currentLine) {
       lines.push({ text: currentLine, width: ctx.measureText(currentLine).width });
     }
-
-    return {
-      lines,
-      lineCount: lines.length,
-      height: lines.length * this.lineHeight,
-    };
+    return lines;
   }
 
-  renderClean() {
+  renderWallClean() {
     const { ctx, displayWidth, displayHeight } = this;
     ctx.clearRect(0, 0, displayWidth, displayHeight);
     ctx.fillStyle = COLORS.bg;
     ctx.fillRect(0, 0, displayWidth, displayHeight);
 
-    const layout = this.getLines();
-    const totalHeight = layout.lines.length * this.lineHeight;
-    const startY = (displayHeight - totalHeight) / 2 + this.fontSize;
-
-    ctx.font = this.fontString;
-    ctx.fillStyle = COLORS.green;
     ctx.textBaseline = 'alphabetic';
 
-    for (let i = 0; i < layout.lines.length; i++) {
-      const line = layout.lines[i];
-      const x = (displayWidth - line.width) / 2;
-      const y = startY + i * this.lineHeight;
-      ctx.fillText(line.text, x, y);
-    }
+    for (const block of this.wallBlocks) {
+      ctx.font = block.fontStr;
+      ctx.globalAlpha = block.opacity;
+      ctx.fillStyle = block.color;
 
-    this.updateCounter();
-    this.updateA11y();
-  }
-
-  updateCounter() {
-    if (this.counterEl) {
-      this.counterEl.textContent = `→ ${this.currentIndex + 1} / ${this.arrows.length}`;
-    }
-  }
-
-  updateA11y() {
-    if (this.a11yEl) {
-      this.a11yEl.textContent = this.arrows[this.currentIndex];
-    }
-  }
-
-  initDisplacement() {
-    const slices = [];
-    const sliceCount = Math.floor(this.displayHeight / 4);
-    for (let i = 0; i < sliceCount; i++) {
-      slices.push({
-        y: i * 4,
-        height: 2 + Math.floor(Math.random() * 6),
-        offset: (Math.random() - 0.5) * 80,
-        active: Math.random() < 0.3,
-      });
-    }
-    this.glitch.displacement = slices;
-  }
-
-  decayDisplacement(dt) {
-    const decay = dt / 400;
-    for (const slice of this.glitch.displacement) {
-      slice.offset *= Math.max(0, 1 - decay);
-      if (Math.abs(slice.offset) < 0.5) {
-        slice.offset = 0;
-        slice.active = false;
-      }
-    }
-  }
-
-  applyDisplacement() {
-    const { ctx, canvas } = this;
-    const dpr = window.devicePixelRatio || 1;
-    const w = canvas.width;
-    const h = canvas.height;
-
-    const imageData = ctx.getImageData(0, 0, w, h);
-    const data = imageData.data;
-    const copy = new Uint8ClampedArray(data);
-
-    for (const slice of this.glitch.displacement) {
-      if (!slice.active || slice.offset === 0) continue;
-
-      const yStart = Math.floor(slice.y * dpr);
-      const yEnd = Math.min(h, yStart + Math.floor(slice.height * dpr));
-      const shift = Math.floor(slice.offset * dpr);
-
-      for (let y = yStart; y < yEnd; y++) {
-        for (let x = 0; x < w; x++) {
-          const srcX = x - shift;
-          const dstIdx = (y * w + x) * 4;
-          if (srcX >= 0 && srcX < w) {
-            const srcIdx = (y * w + srcX) * 4;
-            data[dstIdx] = copy[srcIdx];
-            data[dstIdx + 1] = copy[srcIdx + 1];
-            data[dstIdx + 2] = copy[srcIdx + 2];
-            data[dstIdx + 3] = copy[srcIdx + 3];
-          } else {
-            data[dstIdx + 3] = 0;
-          }
-        }
+      for (let i = 0; i < block.lines.length; i++) {
+        const line = block.lines[i];
+        ctx.fillText(line.text, block.x, block.y + (i + 1) * block.lineHeight);
       }
     }
 
-    ctx.putImageData(imageData, 0, 0);
-  }
-
-  renderWithRGB(lines, startY, padding, rgbOffset) {
-    const { ctx, displayWidth } = this;
-
-    const channels = [
-      { color: COLORS.pink, offsetX: -rgbOffset },
-      { color: COLORS.green, offsetX: 0 },
-      { color: COLORS.blue, offsetX: rgbOffset },
-    ];
-
-    ctx.font = this.fontString;
-    ctx.textBaseline = 'alphabetic';
-    ctx.globalCompositeOperation = 'screen';
-
-    for (const channel of channels) {
-      ctx.fillStyle = channel.color;
-      for (let i = 0; i < lines.length; i++) {
-        const line = lines[i];
-        const x = (displayWidth - line.width) / 2 + channel.offsetX;
-        const y = startY + i * this.lineHeight;
-        ctx.fillText(line.text, x, y);
-      }
-    }
-
-    ctx.globalCompositeOperation = 'source-over';
-  }
-
-  initScramble(lines) {
-    this.glitch.scrambleChars = [];
-    for (const line of lines) {
-      const chars = [...line.text];
-      for (const ch of chars) {
-        this.glitch.scrambleChars.push({
-          target: ch,
-          current: ch === ' ' ? ' ' : GLITCH_CHARS[Math.floor(Math.random() * GLITCH_CHARS.length)],
-          resolved: false,
-        });
-      }
-      this.glitch.scrambleChars.push({ target: '\n', current: '\n', resolved: true });
-    }
-    this.glitch.scrambleProgress = 0;
-  }
-
-  advanceScramble(dt) {
-    const chars = this.glitch.scrambleChars;
-    const totalNonSpace = chars.filter(c => c.target !== ' ' && c.target !== '\n').length;
-    if (totalNonSpace === 0) return;
-
-    this.glitch.scrambleProgress = Math.min(1, this.glitch.scrambleProgress + dt / 600);
-    const resolveUpTo = Math.floor(this.glitch.scrambleProgress * chars.length);
-
-    let idx = 0;
-    for (const ch of chars) {
-      if (ch.target === ' ' || ch.target === '\n') { idx++; continue; }
-      if (idx < resolveUpTo) {
-        ch.current = ch.target;
-        ch.resolved = true;
-      } else if (!ch.resolved) {
-        ch.current = GLITCH_CHARS[Math.floor(Math.random() * GLITCH_CHARS.length)];
-      }
-      idx++;
-    }
-  }
-
-  renderScrambled(lines, startY, padding, rgbOffset) {
-    const { ctx, displayWidth } = this;
-    const channels = [
-      { color: COLORS.pink, offsetX: -rgbOffset },
-      { color: COLORS.green, offsetX: 0 },
-      { color: COLORS.blue, offsetX: rgbOffset },
-    ];
-
-    ctx.font = this.fontString;
-    ctx.textBaseline = 'alphabetic';
-    ctx.globalCompositeOperation = 'screen';
-
-    const scrambledLines = [];
-    let lineChars = [];
-    for (const ch of this.glitch.scrambleChars) {
-      if (ch.target === '\n') {
-        scrambledLines.push(lineChars.join(''));
-        lineChars = [];
-      } else {
-        lineChars.push(ch.current);
-      }
-    }
-    if (lineChars.length > 0) scrambledLines.push(lineChars.join(''));
-
-    for (const channel of channels) {
-      ctx.fillStyle = channel.color;
-      for (let i = 0; i < scrambledLines.length && i < lines.length; i++) {
-        const x = (displayWidth - lines[i].width) / 2 + channel.offsetX;
-        const y = startY + i * this.lineHeight;
-        ctx.fillText(scrambledLines[i], x, y);
-      }
-    }
-
-    ctx.globalCompositeOperation = 'source-over';
+    ctx.globalAlpha = 1;
   }
 
   setupObserver() {
@@ -364,47 +208,57 @@ class GlitchOracle {
       ([entry]) => {
         this.isVisible = entry.isIntersecting;
         if (this.isVisible) {
-          this.startIdleTimer();
           if (!this.animFrameId) this.tick();
         } else {
-          this.stopIdleTimer();
           if (this.animFrameId) {
             cancelAnimationFrame(this.animFrameId);
             this.animFrameId = null;
           }
         }
       },
-      { threshold: 0.2 }
+      { threshold: 0.1 }
     );
     observer.observe(section);
-
-    let lastScrollArrow = this.currentIndex;
-    const scrollHandler = () => {
-      if (!this.isVisible || this.isTransitioning) return;
-
-      const rect = section.getBoundingClientRect();
-      const sectionTop = -rect.top;
-      const sectionHeight = rect.height - window.innerHeight;
-      const progress = Math.max(0, Math.min(1, sectionTop / sectionHeight));
-      const targetIndex = Math.floor(progress * (this.arrows.length - 1));
-
-      if (targetIndex !== lastScrollArrow && targetIndex >= 0 && targetIndex < this.arrows.length) {
-        lastScrollArrow = targetIndex;
-        this.transitionTo(targetIndex);
-      }
-    };
-
-    window.addEventListener('scroll', scrollHandler, { passive: true });
   }
 
   setupInteractions() {
-    this.canvas.addEventListener('click', () => {
-      if (this.isTransitioning) return;
-      let next;
-      do {
-        next = Math.floor(Math.random() * this.arrows.length);
-      } while (next === this.currentIndex && this.arrows.length > 1);
-      this.transitionTo(next);
+    this.canvas.addEventListener('mousemove', (e) => {
+      const rect = this.canvas.getBoundingClientRect();
+      this.mouse.x = e.clientX - rect.left;
+      this.mouse.y = e.clientY - rect.top;
+    });
+
+    this.canvas.addEventListener('mouseleave', () => {
+      this.mouse.x = -9999;
+      this.mouse.y = -9999;
+    });
+
+    this.canvas.addEventListener('touchstart', (e) => {
+      e.preventDefault();
+      const touch = e.touches[0];
+      const rect = this.canvas.getBoundingClientRect();
+      this.mouse.x = touch.clientX - rect.left;
+      this.mouse.y = touch.clientY - rect.top;
+    }, { passive: false });
+
+    this.canvas.addEventListener('touchmove', (e) => {
+      e.preventDefault();
+      const touch = e.touches[0];
+      const rect = this.canvas.getBoundingClientRect();
+      this.mouse.x = touch.clientX - rect.left;
+      this.mouse.y = touch.clientY - rect.top;
+    }, { passive: false });
+
+    this.canvas.addEventListener('touchend', () => {
+      this.mouse.x = -9999;
+      this.mouse.y = -9999;
+    });
+
+    this.canvas.addEventListener('click', (e) => {
+      const rect = this.canvas.getBoundingClientRect();
+      const cx = e.clientX - rect.left;
+      const cy = e.clientY - rect.top;
+      this.triggerShockwave(cx, cy);
     });
 
     this.canvas.style.cursor = 'none';
@@ -413,56 +267,64 @@ class GlitchOracle {
   setupResize() {
     const ro = new ResizeObserver(() => {
       this.resizeCanvas();
-      this.prepareAllArrows();
-      this.renderClean();
+      this.buildWall();
+      this.renderWallClean();
     });
     ro.observe(this.canvas.parentElement);
   }
 
-  startIdleTimer() {
-    this.stopIdleTimer();
-    this.idleActive = false;
-    this.idleTimer = setTimeout(() => {
-      this.idleActive = true;
-      if (!this.animFrameId) this.tick();
-    }, 5000);
-  }
-
-  stopIdleTimer() {
-    if (this.idleTimer) {
-      clearTimeout(this.idleTimer);
-      this.idleTimer = null;
-    }
-    this.idleActive = false;
-  }
-
-  transitionTo(index) {
-    if (this.isTransitioning) return;
-
-    this.currentIndex = index;
-    this.updateCounter();
-    this.updateA11y();
-
-    // Reduced motion: just swap cleanly
+  triggerShockwave(cx, cy) {
     if (this.reducedMotion) {
-      this.renderClean();
+      this.buildWall();
+      this.renderWallClean();
+      this.updateCounter();
       return;
     }
 
-    this.isTransitioning = true;
-    this.stopIdleTimer();
-    this.idleActive = false;
+    this.shockwave = {
+      cx, cy,
+      radius: 0,
+      maxRadius: Math.max(this.displayWidth, this.displayHeight) * 1.2,
+      startTime: performance.now(),
+      newWallBuilt: false,
+    };
+  }
 
-    const layout = this.getLines();
-    this.initScramble(layout.lines);
-    this.initDisplacement();
-    this.glitch.rgbOffset = 8;
-    this.glitch.targetRgbOffset = 0;
+  updateShockwave(now) {
+    if (!this.shockwave) return;
+    const elapsed = now - this.shockwave.startTime;
+    this.shockwave.radius = (elapsed / 1000) * 800;
 
-    this.transitionStart = performance.now();
-    this.transitionLayout = layout;
+    if (!this.shockwave.newWallBuilt && elapsed > 300) {
+      this.buildWall();
+      this.updateCounter();
+      this.shockwave.newWallBuilt = true;
+    }
 
-    if (!this.animFrameId) this.tick();
+    if (this.shockwave.radius > this.shockwave.maxRadius) {
+      this.shockwave = null;
+    }
+  }
+
+  updateCounter() {
+    if (this.counterEl) {
+      this.counterEl.textContent = `${this.wallBlocks.length} arrows \u00b7 click to reshuffle`;
+    }
+  }
+
+  updateA11y() {
+    if (!this.a11yEl) return;
+    const nearbyTexts = [];
+    for (const block of this.wallBlocks) {
+      const bCenterX = block.x + 100;
+      const bCenterY = block.y + block.lines.length * block.lineHeight / 2;
+      const dist = Math.hypot(this.mouse.smoothX - bCenterX, this.mouse.smoothY - bCenterY);
+      if (dist < REVEAL_RADIUS * 2) {
+        nearbyTexts.push(block.text);
+        if (nearbyTexts.length >= 3) break;
+      }
+    }
+    this.a11yEl.textContent = nearbyTexts.join(' | ');
   }
 
   tick() {
@@ -471,82 +333,19 @@ class GlitchOracle {
       return;
     }
 
+    this.mouse.smoothX += (this.mouse.x - this.mouse.smoothX) * 0.15;
+    this.mouse.smoothY += (this.mouse.y - this.mouse.smoothY) * 0.15;
+
     const now = performance.now();
-    const { ctx, displayWidth, displayHeight } = this;
+    this.updateShockwave(now);
+    this.frameCount++;
 
-    ctx.clearRect(0, 0, displayWidth, displayHeight);
-    ctx.fillStyle = COLORS.bg;
-    ctx.fillRect(0, 0, displayWidth, displayHeight);
+    // For now, just render clean — corruption added in Task 3
+    this.renderWallClean();
 
-    const layout = this.transitionLayout || this.getLines();
-    const totalHeight = layout.lines.length * this.lineHeight;
-    const startY = (displayHeight - totalHeight) / 2 + this.fontSize;
-    const padding = window.innerWidth <= 768 ? 30 : 60;
-
-    if (this.isTransitioning && !this.reducedMotion) {
-      const elapsed = now - this.transitionStart;
-      const dt = 16;
-
-      this.advanceScramble(dt);
-      this.decayDisplacement(dt);
-
-      const rgbProgress = Math.min(1, elapsed / 500);
-      this.glitch.rgbOffset = 8 * (1 - this.easeOutCubic(rgbProgress));
-
-      this.renderScrambled(layout.lines, startY, padding, this.glitch.rgbOffset);
-      this.applyDisplacement();
-
-      if (elapsed > 700) {
-        this.isTransitioning = false;
-        this.transitionLayout = null;
-        this.renderClean();
-        this.startIdleTimer();
-      }
-    } else if (this.idleActive && !this.reducedMotion) {
-      this.glitch.idleRgbPhase += 0.02;
-      const idleRgb = Math.sin(this.glitch.idleRgbPhase) * 1.5;
-
-      this.renderWithRGB(layout.lines, startY, padding, idleRgb);
-
-      this.glitch.idleFlickerTimer += 16;
-      if (this.glitch.idleFlickerTimer > 3000 + Math.random() * 4000) {
-        this.glitch.idleFlickerTimer = 0;
-        this.applyIdleFlicker();
-      }
-    } else {
-      this.renderClean();
-      if (!this.isTransitioning && !this.idleActive) {
-        this.animFrameId = null;
-        return;
-      }
-    }
+    if (this.frameCount % 30 === 0) this.updateA11y();
 
     this.animFrameId = requestAnimationFrame(() => this.tick());
-  }
-
-  applyIdleFlicker() {
-    const { ctx, canvas } = this;
-    const dpr = window.devicePixelRatio || 1;
-    const w = canvas.width;
-    const y = Math.floor(Math.random() * canvas.height);
-    const h = Math.floor((2 + Math.random() * 4) * dpr);
-    const imageData = ctx.getImageData(0, y, w, h);
-    const shift = Math.floor((Math.random() - 0.5) * 20 * dpr);
-
-    const copy = new Uint8ClampedArray(imageData.data);
-    for (let row = 0; row < h; row++) {
-      for (let x = 0; x < w; x++) {
-        const srcX = x - shift;
-        const dstIdx = (row * w + x) * 4;
-        if (srcX >= 0 && srcX < w) {
-          const srcIdx = (row * w + srcX) * 4;
-          imageData.data[dstIdx] = copy[srcIdx];
-          imageData.data[dstIdx + 1] = copy[srcIdx + 1];
-          imageData.data[dstIdx + 2] = copy[srcIdx + 2];
-        }
-      }
-    }
-    ctx.putImageData(imageData, 0, y);
   }
 
   easeOutCubic(t) {
