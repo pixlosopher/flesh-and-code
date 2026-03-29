@@ -477,6 +477,78 @@ class GlitchOracle {
     ctx.putImageData(imageData, 0, 0);
   }
 
+  // === SHOCKWAVE RENDERING ===
+
+  renderShockwave() {
+    if (!this.shockwave) return;
+
+    const { ctx, displayWidth, displayHeight, canvas } = this;
+    const dpr = window.devicePixelRatio || 1;
+    const { cx, cy, radius, startTime } = this.shockwave;
+    const elapsed = performance.now() - startTime;
+
+    // Flash at click point (first 100ms)
+    if (elapsed < 100) {
+      const flashAlpha = 1 - elapsed / 100;
+      const flashR = 20 + elapsed * 0.5;
+      const gradient = ctx.createRadialGradient(cx, cy, 0, cx, cy, flashR);
+      gradient.addColorStop(0, `rgba(0, 255, 153, ${flashAlpha})`);
+      gradient.addColorStop(1, 'rgba(0, 255, 153, 0)');
+      ctx.fillStyle = gradient;
+      ctx.fillRect(0, 0, displayWidth, displayHeight);
+    }
+
+    // Ring displacement
+    const ringWidth = 60;
+    const ringInner = Math.max(0, radius - ringWidth);
+    const w = canvas.width;
+    const h = canvas.height;
+
+    const imageData = ctx.getImageData(0, 0, w, h);
+    const data = imageData.data;
+    const copy = new Uint8ClampedArray(data);
+
+    const cxPx = cx * dpr;
+    const cyPx = cy * dpr;
+    const rPx = radius * dpr;
+    const riPx = ringInner * dpr;
+    const rwPx = ringWidth * dpr;
+
+    const yMin = Math.max(0, Math.floor(cyPx - rPx - rwPx));
+    const yMax = Math.min(h, Math.ceil(cyPx + rPx + rwPx));
+    const xMin = Math.max(0, Math.floor(cxPx - rPx - rwPx));
+    const xMax = Math.min(w, Math.ceil(cxPx + rPx + rwPx));
+
+    for (let y = yMin; y < yMax; y++) {
+      for (let x = xMin; x < xMax; x++) {
+        const dx = x - cxPx;
+        const dy = y - cyPx;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+
+        if (dist > riPx && dist < rPx) {
+          const ringPos = (dist - riPx) / rwPx;
+          const intensity = Math.sin(ringPos * Math.PI);
+          const shift = Math.floor(intensity * 40 * dpr);
+          const rgbShift = Math.floor(intensity * 10 * dpr);
+
+          const idx = (y * w + x) * 4;
+
+          const srcX = Math.min(w - 1, Math.max(0, x + shift));
+          const srcIdx = (y * w + srcX) * 4;
+
+          const srcR = Math.min(w - 1, Math.max(0, x - rgbShift));
+          const srcB = Math.min(w - 1, Math.max(0, x + rgbShift));
+
+          data[idx] = copy[(y * w + srcR) * 4];
+          data[idx + 1] = copy[srcIdx + 1];
+          data[idx + 2] = copy[(y * w + srcB) * 4 + 2];
+        }
+      }
+    }
+
+    ctx.putImageData(imageData, 0, 0);
+  }
+
   tick() {
     if (!this.isVisible) {
       this.animFrameId = null;
@@ -494,6 +566,11 @@ class GlitchOracle {
       this.renderWallClean();
     } else {
       this.renderWallWithCorruption();
+    }
+
+    // Shockwave overlay
+    if (this.shockwave) {
+      this.renderShockwave();
     }
 
     if (this.frameCount % 30 === 0) this.updateA11y();
