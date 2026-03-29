@@ -390,13 +390,116 @@ class GlitchOracle {
   }
 
   transitionTo(index) {
+    if (this.isTransitioning) return;
+    this.isTransitioning = true;
+    this.stopIdleTimer();
+    this.idleActive = false;
+
     this.currentIndex = index;
-    this.renderClean();
-    this.startIdleTimer();
+    this.updateCounter();
+    this.updateA11y();
+
+    const layout = this.getLines();
+
+    if (!this.reducedMotion) {
+      this.initScramble(layout.lines);
+      this.initDisplacement();
+      this.glitch.rgbOffset = 8;
+      this.glitch.targetRgbOffset = 0;
+    }
+
+    this.transitionStart = performance.now();
+    this.transitionLayout = layout;
+
+    if (!this.animFrameId) this.tick();
   }
 
   tick() {
-    this.animFrameId = null;
+    if (!this.isVisible) {
+      this.animFrameId = null;
+      return;
+    }
+
+    const now = performance.now();
+    const { ctx, displayWidth, displayHeight } = this;
+
+    ctx.clearRect(0, 0, displayWidth, displayHeight);
+    ctx.fillStyle = COLORS.bg;
+    ctx.fillRect(0, 0, displayWidth, displayHeight);
+
+    const layout = this.transitionLayout || this.getLines();
+    const totalHeight = layout.lines.length * this.lineHeight;
+    const startY = (displayHeight - totalHeight) / 2 + this.fontSize;
+    const padding = window.innerWidth <= 768 ? 30 : 60;
+
+    if (this.isTransitioning && !this.reducedMotion) {
+      const elapsed = now - this.transitionStart;
+      const dt = 16;
+
+      this.advanceScramble(dt);
+      this.decayDisplacement(dt);
+
+      const rgbProgress = Math.min(1, elapsed / 500);
+      this.glitch.rgbOffset = 8 * (1 - this.easeOutCubic(rgbProgress));
+
+      this.renderScrambled(layout.lines, startY, padding, this.glitch.rgbOffset);
+      this.applyDisplacement();
+
+      if (elapsed > 700) {
+        this.isTransitioning = false;
+        this.transitionLayout = null;
+        this.renderClean();
+        this.startIdleTimer();
+      }
+    } else if (this.idleActive && !this.reducedMotion) {
+      this.glitch.idleRgbPhase += 0.02;
+      const idleRgb = Math.sin(this.glitch.idleRgbPhase) * 1.5;
+
+      this.renderWithRGB(layout.lines, startY, padding, idleRgb);
+
+      this.glitch.idleFlickerTimer += 16;
+      if (this.glitch.idleFlickerTimer > 3000 + Math.random() * 4000) {
+        this.glitch.idleFlickerTimer = 0;
+        this.applyIdleFlicker();
+      }
+    } else {
+      this.renderClean();
+      if (!this.isTransitioning && !this.idleActive) {
+        this.animFrameId = null;
+        return;
+      }
+    }
+
+    this.animFrameId = requestAnimationFrame(() => this.tick());
+  }
+
+  applyIdleFlicker() {
+    const { ctx, canvas } = this;
+    const dpr = window.devicePixelRatio || 1;
+    const w = canvas.width;
+    const y = Math.floor(Math.random() * canvas.height);
+    const h = Math.floor((2 + Math.random() * 4) * dpr);
+    const imageData = ctx.getImageData(0, y, w, h);
+    const shift = Math.floor((Math.random() - 0.5) * 20 * dpr);
+
+    const copy = new Uint8ClampedArray(imageData.data);
+    for (let row = 0; row < h; row++) {
+      for (let x = 0; x < w; x++) {
+        const srcX = x - shift;
+        const dstIdx = (row * w + x) * 4;
+        if (srcX >= 0 && srcX < w) {
+          const srcIdx = (row * w + srcX) * 4;
+          imageData.data[dstIdx] = copy[srcIdx];
+          imageData.data[dstIdx + 1] = copy[srcIdx + 1];
+          imageData.data[dstIdx + 2] = copy[srcIdx + 2];
+        }
+      }
+    }
+    ctx.putImageData(imageData, 0, y);
+  }
+
+  easeOutCubic(t) {
+    return 1 - Math.pow(1 - t, 3);
   }
 }
 
