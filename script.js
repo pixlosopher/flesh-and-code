@@ -994,22 +994,62 @@ document.addEventListener('DOMContentLoaded', () => {
   const galleryToggles = document.querySelectorAll('.theme-gallery .gallery-toggle');
 
   // ============================================
-  // GALLERY LAZY LOADING - IntersectionObserver
+  // GALLERY LAZY LOADING - Queue-based loader
+  // Max 6 concurrent GIF downloads to prevent
+  // network saturation and browser memory spikes
   // ============================================
+  const MAX_CONCURRENT = 6;
+  let activeLoads = 0;
+  const loadQueue = [];
+
+  function processLoadQueue() {
+    while (activeLoads < MAX_CONCURRENT && loadQueue.length > 0) {
+      const img = loadQueue.shift();
+      // Skip if already loaded (src set by the time it reaches front of queue)
+      if (!img.dataset.src) continue;
+
+      activeLoads++;
+      const src = img.dataset.src;
+
+      // Mark as loading so we don't re-queue it
+      img.removeAttribute('data-src');
+      img.classList.add('gif-loading');
+
+      const tempImg = new Image();
+      tempImg.onload = () => {
+        img.src = src;
+        img.classList.remove('gif-loading');
+        img.classList.add('gif-loaded');
+        activeLoads--;
+        processLoadQueue();
+      };
+      tempImg.onerror = () => {
+        // Image missing or failed — hide the card gracefully
+        img.classList.remove('gif-loading');
+        img.closest('.video-card')?.classList.add('gif-error');
+        activeLoads--;
+        processLoadQueue();
+      };
+      tempImg.src = src;
+    }
+  }
+
+  function enqueueImage(img) {
+    if (!img.dataset.src || img.classList.contains('gif-loading')) return;
+    loadQueue.push(img);
+    processLoadQueue();
+  }
+
+  // IntersectionObserver fires when images enter near-viewport zone
   const lazyImageObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        const img = entry.target;
-        if (img.dataset.src) {
-          img.src = img.dataset.src;
-          img.removeAttribute('data-src');
-          lazyImageObserver.unobserve(img);
-        }
+        lazyImageObserver.unobserve(entry.target);
+        enqueueImage(entry.target);
       }
     });
-  }, { rootMargin: '200px 0px', threshold: 0 });
+  }, { rootMargin: '100px 0px', threshold: 0 });
 
-  // Observe images that are currently visible (not in collapsed sections)
   function observeVisibleLazyImages() {
     document.querySelectorAll('img[data-src]').forEach(img => {
       lazyImageObserver.observe(img);
@@ -1031,9 +1071,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // When opening, observe any lazy images inside
         if (!content.classList.contains('collapsed')) {
-          content.querySelectorAll('img[data-src]').forEach(img => {
-            lazyImageObserver.observe(img);
-          });
+          // Small delay so the CSS transition has started and
+          // IntersectionObserver can correctly calculate visibility
+          setTimeout(() => {
+            content.querySelectorAll('img[data-src]').forEach(img => {
+              lazyImageObserver.observe(img);
+            });
+          }, 50);
         }
       }
     });
