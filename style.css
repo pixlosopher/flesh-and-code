@@ -863,56 +863,47 @@ section {
   transition: opacity 0.4s ease;
 }
 
-/* Image not yet loaded — invisible but occupies space */
-.video-card img:not([src]) {
-  opacity: 0;
-}
-
-/* Actively downloading — shimmer pulse */
-.video-card img.gif-loading {
-  opacity: 0;
-  position: relative;
-}
-.video-card img.gif-loading::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    90deg,
-    rgba(0, 255, 153, 0) 0%,
-    rgba(0, 255, 153, 0.06) 50%,
-    rgba(0, 255, 153, 0) 100%
-  );
-  background-size: 200% 100%;
-  animation: gif-shimmer 1.6s ease-in-out infinite;
-}
+/* Hover-to-animate: static thumbnail is default, GIF loads on hover */
 @keyframes gif-shimmer {
   0%   { background-position: -200% 0; }
   100% { background-position:  200% 0; }
 }
 
-/* Loaded — fade in */
-.video-card img.gif-loaded {
-  opacity: 1;
-}
-
-/* Wrapper shimmer for the loading state (works on the wrapper, not img) */
-.video-card:has(img.gif-loading) .video-wrapper,
-.video-card:has(img:not([src])) .video-wrapper {
+/* While GIF is downloading on hover — shimmer on wrapper */
+.video-card:has(img.gif-loading) .video-wrapper {
   background: linear-gradient(
     90deg,
     var(--bg-card) 0%,
-    rgba(0, 255, 153, 0.04) 50%,
+    rgba(0, 255, 153, 0.06) 50%,
     var(--bg-card) 100%
   );
   background-size: 200% 100%;
-  animation: gif-shimmer 1.8s ease-in-out infinite;
+  animation: gif-shimmer 1.2s ease-in-out infinite;
 }
 
-/* Error state — hide broken card */
-.video-card.gif-error {
-  opacity: 0.2;
+/* Subtle play indicator on thumbnail cards (hover hint) */
+.video-card .video-wrapper {
+  position: relative;
+}
+.video-card:has(img[data-gif]:not(.gif-playing)) .video-wrapper::after {
+  content: '▶';
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  font-size: 0.65rem;
+  color: var(--neon-green);
+  opacity: 0;
+  transition: opacity 0.2s ease;
   pointer-events: none;
+  text-shadow: 0 0 6px rgba(0, 255, 153, 0.4);
+}
+.video-card:has(img[data-gif]:not(.gif-playing)):hover .video-wrapper::after {
+  opacity: 0.7;
+}
+
+/* Playing state — subtle border glow */
+.video-card:has(img.gif-playing) .video-wrapper {
+  box-shadow: 0 0 8px rgba(0, 255, 153, 0.15);
 }
 
 .video-glitch-overlay {

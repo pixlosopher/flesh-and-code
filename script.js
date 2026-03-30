@@ -656,14 +656,22 @@ document.addEventListener('DOMContentLoaded', () => {
     } else if (num >= 70 && num <= 320) {
       return `GIFS/${num}_pxl.gif`;
     }
-    return null; // Arrow 275 has no GIF
+    return null;
+  }
+
+  // Get static WebP thumbnail path from a GIF path
+  function getThumbPath(gifPath) {
+    if (!gifPath) return null;
+    return gifPath.replace('GIFS/', 'GIFS/thumbs/').replace(/\.gif$/i, '.webp');
   }
 
   if (arrowsCarousel) {
     const randomArrows = shuffleArray(allArrows).slice(0, 12);
     arrowsCarousel.innerHTML = randomArrows.map(arrow => {
       const gifPath = getGifPath(arrow.num);
-      const gifStyle = gifPath ? `style="background-image: url('${gifPath}');"` : '';
+      const thumbPath = getThumbPath(gifPath);
+      const bgUrl = thumbPath || gifPath;
+      const gifStyle = bgUrl ? `style="background-image: url('${bgUrl}');"` : '';
       const gifClass = gifPath ? 'has-gif' : '';
 
       return `
@@ -702,10 +710,11 @@ document.addEventListener('DOMContentLoaded', () => {
           const gifPath = getGifPath(num);
           const aphorism = arrowsData[num] || `Arrow ${num}`;
 
+          const thumbPath = getThumbPath(gifPath);
           return `
             <div class="video-card reveal-item" data-type="gif" data-arrow="${num}">
               <div class="video-wrapper">
-                <img src="${gifPath}" alt="Arrow ${num}" loading="lazy" />
+                <img src="${thumbPath || gifPath}" ${gifPath ? `data-gif="${gifPath}"` : ''} alt="Arrow ${num}" />
                 <div class="video-glitch-overlay"></div>
                 <button class="video-expand-btn" aria-label="Expand">
                   <span class="expand-icon">&#x26F6;</span>
@@ -718,8 +727,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         featuredGrid.innerHTML = html;
 
-        // Re-initialize expand buttons for the new content
+        // Re-initialize expand buttons and hover-to-animate for the new content
         initExpandButtons();
+        setupGifHover();
       })
       .catch(err => {
         console.log('Could not load arrows.json for featured gallery:', err);
@@ -739,8 +749,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const quote = card.querySelector('.arrow-quote');
 
         if (img) {
-          // Open a simple fullscreen modal for the GIF
-          openFeaturedModal(img.getAttribute('src'), quote ? quote.textContent : '');
+          // Open modal with full animated GIF (data-gif), not the static thumb
+          const gifSrc = img.dataset.gif || img.getAttribute('src');
+          openFeaturedModal(gifSrc, quote ? quote.textContent : '');
         }
       });
     });
@@ -994,68 +1005,74 @@ document.addEventListener('DOMContentLoaded', () => {
   const galleryToggles = document.querySelectorAll('.theme-gallery .gallery-toggle');
 
   // ============================================
-  // GALLERY LAZY LOADING - Queue-based loader
-  // Max 6 concurrent GIF downloads to prevent
-  // network saturation and browser memory spikes
+  // GALLERY: Hover-to-Animate GIF System
+  // Thumbnails (WebP, ~18KB) load as src by default.
+  // Full animated GIF (2-11MB) loads on hover only.
   // ============================================
-  const MAX_CONCURRENT = 6;
-  let activeLoads = 0;
-  const loadQueue = [];
+  const gifCache = new Map(); // url -> loaded Image (prevents re-download)
 
-  function processLoadQueue() {
-    while (activeLoads < MAX_CONCURRENT && loadQueue.length > 0) {
-      const img = loadQueue.shift();
-      // Skip if already loaded (src set by the time it reaches front of queue)
-      if (!img.dataset.src) continue;
-
-      activeLoads++;
-      const src = img.dataset.src;
-
-      // Mark as loading so we don't re-queue it
-      img.removeAttribute('data-src');
-      img.classList.add('gif-loading');
-
-      const tempImg = new Image();
-      tempImg.onload = () => {
-        img.src = src;
-        img.classList.remove('gif-loading');
-        img.classList.add('gif-loaded');
-        activeLoads--;
-        processLoadQueue();
-      };
-      tempImg.onerror = () => {
-        // Image missing or failed — hide the card gracefully
-        img.classList.remove('gif-loading');
-        img.closest('.video-card')?.classList.add('gif-error');
-        activeLoads--;
-        processLoadQueue();
-      };
-      tempImg.src = src;
-    }
-  }
-
-  function enqueueImage(img) {
-    if (!img.dataset.src || img.classList.contains('gif-loading')) return;
-    loadQueue.push(img);
-    processLoadQueue();
-  }
-
-  // IntersectionObserver fires when images enter near-viewport zone
-  const lazyImageObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        lazyImageObserver.unobserve(entry.target);
-        enqueueImage(entry.target);
-      }
+  function preloadGif(url) {
+    if (gifCache.has(url)) return gifCache.get(url);
+    const promise = new Promise((resolve, reject) => {
+      const img = new Image();
+      img.onload = () => resolve(url);
+      img.onerror = () => reject(url);
+      img.src = url;
     });
-  }, { rootMargin: '100px 0px', threshold: 0 });
+    gifCache.set(url, promise);
+    return promise;
+  }
 
-  function observeVisibleLazyImages() {
-    document.querySelectorAll('img[data-src]').forEach(img => {
-      lazyImageObserver.observe(img);
+  // Attach hover-to-animate to all gallery images with data-gif
+  function setupGifHover() {
+    document.querySelectorAll('img[data-gif]').forEach(img => {
+      if (img._gifHoverBound) return; // don't double-bind
+      img._gifHoverBound = true;
+
+      const gifUrl = img.dataset.gif;
+      const thumbUrl = img.src; // original WebP thumbnail
+
+      // Mouse enter → start loading GIF, swap when ready
+      img.addEventListener('mouseenter', () => {
+        img.classList.add('gif-loading');
+        preloadGif(gifUrl).then(url => {
+          img.src = url;
+          img.classList.remove('gif-loading');
+          img.classList.add('gif-playing');
+        }).catch(() => {
+          img.classList.remove('gif-loading');
+        });
+      });
+
+      // Mouse leave → revert to static thumbnail (frees GIF memory)
+      img.addEventListener('mouseleave', () => {
+        img.src = thumbUrl;
+        img.classList.remove('gif-playing', 'gif-loading');
+      });
+
+      // Touch: tap to toggle GIF on/off
+      let touchPlaying = false;
+      img.addEventListener('touchstart', (e) => {
+        e.preventDefault();
+        if (touchPlaying) {
+          img.src = thumbUrl;
+          img.classList.remove('gif-playing', 'gif-loading');
+          touchPlaying = false;
+        } else {
+          img.classList.add('gif-loading');
+          preloadGif(gifUrl).then(url => {
+            img.src = url;
+            img.classList.remove('gif-loading');
+            img.classList.add('gif-playing');
+            touchPlaying = true;
+          }).catch(() => {
+            img.classList.remove('gif-loading');
+          });
+        }
+      }, { passive: false });
     });
   }
-  observeVisibleLazyImages();
+  setupGifHover();
 
   galleryToggles.forEach(toggle => {
     toggle.addEventListener('click', () => {
@@ -1069,15 +1086,9 @@ document.addEventListener('DOMContentLoaded', () => {
       if (content) {
         content.classList.toggle('collapsed');
 
-        // When opening, observe any lazy images inside
+        // When opening, bind hover handlers on any new images
         if (!content.classList.contains('collapsed')) {
-          // Small delay so the CSS transition has started and
-          // IntersectionObserver can correctly calculate visibility
-          setTimeout(() => {
-            content.querySelectorAll('img[data-src]').forEach(img => {
-              lazyImageObserver.observe(img);
-            });
-          }, 50);
+          setTimeout(() => setupGifHover(), 100);
         }
       }
     });
